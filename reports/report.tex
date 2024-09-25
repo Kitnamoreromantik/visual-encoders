@@ -244,7 +244,7 @@ Next, the empirical distribution $F_{\text{emp}}$ is defined as:
 \[
 F_{\text{emp}}(i) = \frac{i}{N}, \quad i = 1, 2, \ldots, N
 \]
-where $ N $ is the number of filtered valid points. Then the following transformis applied:
+where $ N $ is the number of filtered valid points. Then the following transforms are applied:
 \[
 x = \log(\mu), \quad y = -\log(1 - F_{\text{emp}}).
 \]
@@ -264,7 +264,7 @@ where $ \lambda_i $ are the eigenvalues of the covariance matrix, i.e. the varia
 
 To estimate the anisotropy, the following steps were performed in the code implementation.
 
-The mean of the embeddings is subtracted from each embedding vector to obtain a zero-centered dataset. This ensures that the covariance matrix captures the variance relative to the mean.
+The mean of the embeddings is subtracted from each embedding vector to obtain a zero-centered dataset in order to ensure that the covariance matrix captures the variance relative to the mean.
 
 The centered embeddings are decomposed using singular value decomposition (SVD) which returns singular values that are the square roots of the eigenvalues of the covariance matrix.
 $
@@ -272,15 +272,15 @@ $
 $
 where $\mathbf{\Sigma}$ contains the singular values $\sigma_1, \sigma_2, \ldots, \sigma_d$ .
 
-The eigenvalues of the covariance matrix $\mathbf{C}$ are related to the singular values by:
-$
+The eigenvalues of the covariance matrix are related to the singular values by:
+\[
 \lambda_i = \frac{\sigma_i^2}{n - 1}
-$
+\]
 where $n$ is the number of samples. The eigenvalues describe how much variance is present in each principal direction. Finally, the ratio of the largest eigenvalue $\lambda_{\text{max}}$ to the sum of all eigenvalues showsn the extent to which the variance in the embedding space is concentrated along the principal direction.
 
-If the anisotropy value is close to 1, it indicates that most of the variance is captured by a single direction in the embedding space. In this case the data is essentially lying on a lower dimensional manifold. Vice versa, if the anisotropy is lower, it implies that the variance is more spread across multiple directions, saying that embeddings are more isotropic and cover a wider range of dimensions in the embedding space.
+The anisotropy can be understood as following. If the value is close to 1, it indicates that most of the variance is captured by a single direction in the embedding space. In this case the data is essentially lying on a lower-dimensional manifold. Vice versa, if the anisotropy is low, it implies that the variance is more spread across multiple directions, saying that embeddings are more isotropic and cover a wider range of dimensions in the embedding space.
 
-Anisotropic embeddings can indicate that the model focuses on a limited set of features, potentially limiting its ability to generalize. Isotropic embeddings, on the other hand, suggest that the model is capturing a more balanced and diverse set of features, leading to a richer data representation.
+Anisotropic embeddings can indicate that the model focuses on a limited set of features, potentially limiting its ability to generalize. Isotropic embeddings, in contrast, suggest that the model is capturing a more balanced and diverse set of features, leading to a richer data representation.
 
 
 \subsection{Experiment}
@@ -289,36 +289,36 @@ The experimental setup in this study  essentially extends to vision transformers
 
 \subsection{Results}
 
-The experimental outcomes are shown below. First, as a benchmark take more traditional CNNs:
+The experimental outcomes are shown below. First, as a benchmark are taken CNN models:
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/resnet50_topology.png}
+\includegraphics[width=0.78\textwidth]{figures/resnet50_topology.png}
 \end{figure}
 
-Then the plots for the vision transformers:
+Then the plots for the vision transformers under consideration:
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/facebook-convnext-base-224_topology.png}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.75\textwidth]{figures/facebook-convnext-tiny-224_topology.png}
+\includegraphics[width=0.78\textwidth]{figures/facebook-convnext-base-224_topology.png}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/openai-clip-vit-base-patch16_topology.png}
+\includegraphics[width=0.78\textwidth]{figures/facebook-convnext-tiny-224_topology.png}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/microsoft-beit-base-patch16-224_topology.png}
+\includegraphics[width=0.78\textwidth]{figures/openai-clip-vit-base-patch16_topology.png}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/microsoft-beit-base-patch16-224-pt22k-ft22k_topology.png}
+\includegraphics[width=0.78\textwidth]{figures/microsoft-beit-base-patch16-224_topology.png}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/microsoft-beit-base-patch16-224-pt22k-ft22k_topology.png}
 \end{figure}
 
 
@@ -334,9 +334,9 @@ In BEiT, \texttt{microsoft/beit-base-patch16-224} the input images are resized a
 
 
 \subsection{Linear probing}
-Linear probing allows us to analyze the quality of feature representations learned at different layers of the models. By attaching a linear classifier to the outputs of the layers and evaluating its performance on a specific task (e.g. classification), it is possible determine how well the representations capture the relevant information needed for that task. Higher accuracy indicates that the features extracted at that layer are more informative for the classification task.
+Linear probing allows to analyze the quality of feature representations learned at different layers of the model. By attaching a linear classifier to the outputs of the layers and evaluating its performance on a specific task (e.g. classification), it is possible to determine how well the representations capture the relevant information needed for that task. Higher accuracy indicates that the features extracted at that layer are more informative for the classification task.
 
-We can also identify which layers contribute the most to task performance. This can help in understanding how information is processed within the model. E.g., first layers may capture low-level features, while deeper layers may learn more abstract representations. Analyzing performance across layers can reveal the depth at which features become most discriminative for specific tasks.
+We can also identify which layers contribute the most to task performance. This can help in understanding how information is processed within the model. E.g., first layers may capture low-level features, while deeper layers may learn more abstract representations. Analyzing performance across layers can reveal the depth at which features become most discriminative for a specific tasks.
 
 \subsection{Results}
 
