@@ -1,5 +1,5 @@
 # Data
-/data/
+/data/imagenet_training_single_objs
 
 # Latex
 *.toc
