@@ -340,13 +340,12 @@ We can also identify which layers contribute the most to task performance. This 
 
 \subsection{Results}
 
-Below are the results for the linar probing across layers for various architectures:
-\begin{figure}[h!]
+\begin{figure}[h!] 
 \centering
 \includegraphics[width=0.85\textwidth]{figures/probing_plots.png}
 \end{figure}
 
-As we can see, for ImageGPT, the best features appear to be obtained in the middle layers, after which performance starts to degrade. In contrast, for ViT-base and BEIT-base, the best features are progressively obtained closer to the output. 
+As we can see, for the ImageGPT, the best features appear to be obtained in the middle layers, after which performance starts to degrade. In contrast, for ViT-base and BEIT-base, the best features are progressively obtained closer to the output.  
 
 The situation is different for ConvNeXt, where the scores remain consistently low without significant improvement. This could be explained by the flattening operation before classification, which collapses the spatial information (i.e., the 2D structure) into a single vector. This process may result in the loss of valuable spatial relationships within the hidden representations, negatively impacting classifier performance.
 

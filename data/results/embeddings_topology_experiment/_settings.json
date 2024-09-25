@@ -1,0 +1,23 @@
+{
+    "architectures": [
+        "alexnet",
+        "resnet50",
+        "facebook/convnext-tiny-224",
+        "facebook/convnext-base-224",
+        "openai/clip-vit-base-patch16",
+        "microsoft/beit-base-patch16-224",
+        "microsoft/beit-base-patch16-224-pt22k-ft22k"
+    ],
+    "image_categories": [
+        "SHIHTZU",
+        "BUTTERFLY",
+        "MIX"
+    ],
+    "num_samples": 200,
+    "BS": 16,
+    "num_resamplings": 7,
+    "pretrained": true,
+    "portion_to_sample": 0.9,
+    "timestamp": "2024-09-25 04:26:40",
+    "note": "Compare topological characteristics for mixed and dedicated image category for all architectures."
+}
