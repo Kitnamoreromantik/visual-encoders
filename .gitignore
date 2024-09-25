@@ -1,6 +1,14 @@
 # Data
 /data/
 
+# Latex
+*.toc
+*.synctex.gz
+*.log
+*.fls
+*.aux
+*.fdb_latexmk
+
 # Mac OS-specific storage files
 .DS_Store
 
