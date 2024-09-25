@@ -321,6 +321,11 @@ Then the plots for the vision transformers under consideration:
 \includegraphics[width=0.78\textwidth]{figures/microsoft-beit-base-patch16-224-pt22k-ft22k_topology.png}
 \end{figure}
 
+For the ResNet, the hunchback shape of ID peaking in the middle layers indicates that these layers capture a more complex, high-dimensional representation of the input data. I.e. the model processes increasingly complex features as it moves deeper before simplifying close to the output \cite{ansuini2019intrinsic}. In contrast, the reversed pattern of anisotropy, with maxima at the beginning and end of the network having minimum in the middle implies that early and late layers show higher directional variance while mid layers focus on refining and compressing the representations leading to more isotropic embeddings. 
+
+The reverse relation between anisotropy and ID can be roughly observed for the  vision transformers architectures as well. The progressive decrease of ID from input to output (e.g. in ConvNeXt) indicates that the network reduces the complexity of the representations, compressing to more task-specific and lower-dimensional features. The pattern of anisotropy that remains low initially but grows closer to the output with a visible peak in the middle indicates that the network first learns more uniform representations. As the network deepens anisotropy increases particularly in the middle and close to the output layers implying that they capture more structured and directional features, refining the spatial relationships.
+
+
 
 \section{Internal representations of vision encoder layers (part 2)}\label{part_2}
 
