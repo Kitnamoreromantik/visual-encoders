@@ -31,10 +31,10 @@ class ImageCategories(Enum):
     BUTTERFLY = "n02279972"
     MIX = "mix"  # mix of the rest ones
 
-NUM_SAMPLES = 300  # NOTE: 500 is default
+NUM_SAMPLES = 200  # NOTE: 500 is default
 PORTION_TO_SAMPLE = 0.9
 BS = 16
-NUM_RESAMPLINGS = 10 # NOTE: 20 is default
+NUM_RESAMPLINGS = 7 # NOTE: 20 is default
 IS_PRETRAINED = True
 IS_DEBUG = False
 NOTE = "Compare topological characteristics for mixed and dedicated image category for all architectures."

@@ -35,12 +35,12 @@ ARCHITECTURES = [
 cwd = Path.cwd()
 root = cwd.parents[cwd.parts.index("scripts")] if "scripts" in cwd.parts else cwd
 RESULTS_ROOT = join(root, "data/results")
-RESULTS_FOLDER = join(RESULTS_ROOT, "probing_experiment")
+RESULTS_FOLDER = join(RESULTS_ROOT, "probing_experiment2")
 
 TRAIN_SUBSET_SIZE = 3000
 TEST_SUBSET_SIZE = 700
 
-logger.add(join(RESULTS_FOLDER, "probing_logs.json"))
+logger.add(join(RESULTS_FOLDER, "probing_logs.txt"))
 
 architecture_model_map = {
     "openai/imagegpt-small":
