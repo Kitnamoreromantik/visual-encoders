@@ -23,7 +23,7 @@ from layers_extractor import LayersExractor
 os.chdir(setup.root)
 sys.path.insert(0, str(setup.root))
 
-logger.add(join(setup.RESULTS_FOLDER, "_logs.json"))
+logger.add(join(setup.RESULTS_FOLDER, "_logs.txt"))
 
 if torch.backends.mps.is_available():
     device = torch.device("mps")

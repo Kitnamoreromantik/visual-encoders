@@ -18,6 +18,6 @@
     "num_resamplings": 7,
     "pretrained": true,
     "portion_to_sample": 0.9,
-    "timestamp": "2024-09-25 04:26:40",
+    "timestamp": "2024-09-25 11:52:00",
     "note": "Compare topological characteristics for mixed and dedicated image category for all architectures."
 }

@@ -1224,3 +1224,1229 @@
 2024-09-25 09:37:05.359 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
 
 
+2024-09-25 11:52:00.764 | INFO     | __main__:<module>:30 - MPS device is assigned
+2024-09-25 11:52:00.766 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 11:52:01.323 | INFO     | __main__:run:75 - Model instantiated: alexnet
+2024-09-25 11:52:01.324 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 11:52:01.324 | INFO     | layers_extractor:get_layers:70 - Extracting AlexNet layers:
+2024-09-25 11:52:01.324 | INFO     | layers_extractor:_add_layer:143 - 	(1): 	   Conv2d skipped
+2024-09-25 11:52:01.324 | INFO     | layers_extractor:_add_layer:138 - 	(2): 	MaxPool2d added
+2024-09-25 11:52:01.325 | INFO     | layers_extractor:_add_layer:143 - 	(3): 	   Conv2d skipped
+2024-09-25 11:52:01.325 | INFO     | layers_extractor:_add_layer:138 - 	(4): 	MaxPool2d added
+2024-09-25 11:52:01.325 | INFO     | layers_extractor:_add_layer:143 - 	(5): 	   Conv2d skipped
+2024-09-25 11:52:01.325 | INFO     | layers_extractor:_add_layer:143 - 	(6): 	   Conv2d skipped
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:143 - 	(7): 	   Conv2d skipped
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:138 - 	(8): 	MaxPool2d added
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:143 - 	(9): 	   Dropout skipped
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:138 - 	(10): 	Linear added
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:143 - 	(11): 	   Dropout skipped
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:138 - 	(12): 	Linear added
+2024-09-25 11:52:01.326 | INFO     | layers_extractor:_add_layer:138 - 	(13): 	Linear added
+2024-09-25 11:52:01.326 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 11:52:01.327 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 11:52:01.392 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 11:52:16.918 | INFO     | __main__:run:183 - ID = 22.49 ± 0.65, anisotropy = 0.16 ± 0.0070
+
+2024-09-25 11:52:17.239 | INFO     | __main__:run:154 - Hidden output shape of (2) MaxPool2d: torch.Size([16, 64, 27, 27])
+2024-09-25 11:52:21.480 | INFO     | __main__:run:183 - ID = 50.24 ± 3.58, anisotropy = 0.07 ± 0.0050
+
+2024-09-25 11:52:21.541 | INFO     | __main__:run:154 - Hidden output shape of (4) MaxPool2d: torch.Size([16, 192, 13, 13])
+2024-09-25 11:52:24.510 | INFO     | __main__:run:183 - ID = 54.78 ± 8.21, anisotropy = 0.04 ± 0.0008
+
+2024-09-25 11:52:24.575 | INFO     | __main__:run:154 - Hidden output shape of (8) MaxPool2d: torch.Size([16, 256, 6, 6])
+2024-09-25 11:52:26.074 | INFO     | __main__:run:183 - ID = 40.10 ± 2.53, anisotropy = 0.08 ± 0.0010
+
+2024-09-25 11:52:26.147 | INFO     | __main__:run:154 - Hidden output shape of (10) Linear: torch.Size([16, 4096])
+2024-09-25 11:52:27.307 | INFO     | __main__:run:183 - ID = 28.54 ± 1.16, anisotropy = 0.11 ± 0.0032
+
+2024-09-25 11:52:27.354 | INFO     | __main__:run:154 - Hidden output shape of (12) Linear: torch.Size([16, 4096])
+2024-09-25 11:52:28.449 | INFO     | __main__:run:183 - ID = 21.02 ± 1.62, anisotropy = 0.10 ± 0.0016
+
+2024-09-25 11:52:28.496 | INFO     | __main__:run:154 - Hidden output shape of (13) Linear: torch.Size([16, 1000])
+2024-09-25 11:52:29.352 | INFO     | __main__:run:183 - ID = 17.80 ± 0.59, anisotropy = 0.15 ± 0.0058
+
+2024-09-25 11:52:29.352 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 11:52:29.416 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 11:52:45.101 | INFO     | __main__:run:183 - ID = 34.57 ± 0.65, anisotropy = 0.12 ± 0.0025
+
+2024-09-25 11:52:45.183 | INFO     | __main__:run:154 - Hidden output shape of (2) MaxPool2d: torch.Size([16, 64, 27, 27])
+2024-09-25 11:52:49.623 | INFO     | __main__:run:183 - ID = 45.14 ± 2.57, anisotropy = 0.05 ± 0.0013
+
+2024-09-25 11:52:49.704 | INFO     | __main__:run:154 - Hidden output shape of (4) MaxPool2d: torch.Size([16, 192, 13, 13])
+2024-09-25 11:52:52.937 | INFO     | __main__:run:183 - ID = 50.50 ± 1.97, anisotropy = 0.04 ± 0.0013
+
+2024-09-25 11:52:53.007 | INFO     | __main__:run:154 - Hidden output shape of (8) MaxPool2d: torch.Size([16, 256, 6, 6])
+2024-09-25 11:52:54.627 | INFO     | __main__:run:183 - ID = 27.95 ± 1.10, anisotropy = 0.09 ± 0.0014
+
+2024-09-25 11:52:54.687 | INFO     | __main__:run:154 - Hidden output shape of (10) Linear: torch.Size([16, 4096])
+2024-09-25 11:52:56.019 | INFO     | __main__:run:183 - ID = 25.21 ± 0.82, anisotropy = 0.20 ± 0.0023
+
+2024-09-25 11:52:56.082 | INFO     | __main__:run:154 - Hidden output shape of (12) Linear: torch.Size([16, 4096])
+2024-09-25 11:52:57.357 | INFO     | __main__:run:183 - ID = 18.25 ± 0.55, anisotropy = 0.21 ± 0.0037
+
+2024-09-25 11:52:57.418 | INFO     | __main__:run:154 - Hidden output shape of (13) Linear: torch.Size([16, 1000])
+2024-09-25 11:52:58.447 | INFO     | __main__:run:183 - ID = 16.63 ± 0.61, anisotropy = 0.25 ± 0.0063
+
+2024-09-25 11:52:58.447 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 11:52:58.522 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 11:53:14.225 | INFO     | __main__:run:183 - ID = 27.74 ± 1.61, anisotropy = 0.15 ± 0.0035
+
+2024-09-25 11:53:14.319 | INFO     | __main__:run:154 - Hidden output shape of (2) MaxPool2d: torch.Size([16, 64, 27, 27])
+2024-09-25 11:53:18.622 | INFO     | __main__:run:183 - ID = 67.07 ± 4.91, anisotropy = 0.08 ± 0.0033
+
+2024-09-25 11:53:18.698 | INFO     | __main__:run:154 - Hidden output shape of (4) MaxPool2d: torch.Size([16, 192, 13, 13])
+2024-09-25 11:53:21.850 | INFO     | __main__:run:183 - ID = 55.04 ± 8.59, anisotropy = 0.04 ± 0.0012
+
+2024-09-25 11:53:21.920 | INFO     | __main__:run:154 - Hidden output shape of (8) MaxPool2d: torch.Size([16, 256, 6, 6])
+2024-09-25 11:53:23.595 | INFO     | __main__:run:183 - ID = 28.65 ± 1.70, anisotropy = 0.07 ± 0.0023
+
+2024-09-25 11:53:23.652 | INFO     | __main__:run:154 - Hidden output shape of (10) Linear: torch.Size([16, 4096])
+2024-09-25 11:53:24.944 | INFO     | __main__:run:183 - ID = 25.79 ± 2.74, anisotropy = 0.12 ± 0.0083
+
+2024-09-25 11:53:25.001 | INFO     | __main__:run:154 - Hidden output shape of (12) Linear: torch.Size([16, 4096])
+2024-09-25 11:53:26.232 | INFO     | __main__:run:183 - ID = 17.92 ± 0.96, anisotropy = 0.13 ± 0.0039
+
+2024-09-25 11:53:26.300 | INFO     | __main__:run:154 - Hidden output shape of (13) Linear: torch.Size([16, 1000])
+2024-09-25 11:53:27.254 | INFO     | __main__:run:183 - ID = 13.96 ± 0.52, anisotropy = 0.20 ± 0.0049
+
+2024-09-25 11:53:27.256 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
+2024-09-25 11:53:27.257 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 11:53:27.678 | INFO     | __main__:run:75 - Model instantiated: resnet50
+2024-09-25 11:53:27.678 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 11:53:27.679 | INFO     | layers_extractor:get_layers:70 - Extracting ResNet layers:
+2024-09-25 11:53:27.679 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 11:53:27.679 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 11:53:27.730 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 11:53:43.396 | INFO     | __main__:run:183 - ID = 26.90 ± 1.12, anisotropy = 0.16 ± 0.0044
+
+2024-09-25 11:53:43.641 | INFO     | __main__:run:154 - Hidden output shape of (1) maxpool: torch.Size([16, 64, 56, 56])
+2024-09-25 11:54:06.744 | INFO     | __main__:run:183 - ID = 33.61 ± 2.58, anisotropy = 0.08 ± 0.0045
+
+2024-09-25 11:54:06.828 | INFO     | __main__:run:154 - Hidden output shape of (10) layer1: torch.Size([16, 256, 56, 56])
+2024-09-25 11:55:59.356 | INFO     | __main__:run:183 - ID = 90.85 ± 2.85, anisotropy = 0.02 ± 0.0010
+
+2024-09-25 11:55:59.577 | INFO     | __main__:run:154 - Hidden output shape of (22) layer2: torch.Size([16, 512, 28, 28])
+2024-09-25 11:56:52.329 | INFO     | __main__:run:183 - ID = 118.98 ± 6.13, anisotropy = 0.01 ± 0.0001
+
+2024-09-25 11:56:52.419 | INFO     | __main__:run:154 - Hidden output shape of (40) layer3: torch.Size([16, 1024, 14, 14])
+2024-09-25 11:57:15.930 | INFO     | __main__:run:183 - ID = 72.07 ± 1.37, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 11:57:16.021 | INFO     | __main__:run:154 - Hidden output shape of (49) layer4: torch.Size([16, 2048, 7, 7])
+2024-09-25 11:57:26.422 | INFO     | __main__:run:183 - ID = 46.74 ± 1.32, anisotropy = 0.05 ± 0.0011
+
+2024-09-25 11:57:26.504 | INFO     | __main__:run:154 - Hidden output shape of (50) avgpool: torch.Size([16, 2048, 1, 1])
+2024-09-25 11:57:28.163 | INFO     | __main__:run:183 - ID = 22.56 ± 0.68, anisotropy = 0.09 ± 0.0025
+
+2024-09-25 11:57:28.222 | INFO     | __main__:run:154 - Hidden output shape of (51) fc: torch.Size([16, 1000])
+2024-09-25 11:57:29.857 | INFO     | __main__:run:183 - ID = 20.96 ± 0.77, anisotropy = 0.13 ± 0.0026
+
+2024-09-25 11:57:29.857 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 11:57:29.934 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 11:57:46.365 | INFO     | __main__:run:183 - ID = 33.44 ± 0.94, anisotropy = 0.16 ± 0.0062
+
+2024-09-25 11:57:46.490 | INFO     | __main__:run:154 - Hidden output shape of (1) maxpool: torch.Size([16, 64, 56, 56])
+2024-09-25 11:58:10.627 | INFO     | __main__:run:183 - ID = 47.46 ± 2.06, anisotropy = 0.05 ± 0.0011
+
+2024-09-25 11:58:10.721 | INFO     | __main__:run:154 - Hidden output shape of (10) layer1: torch.Size([16, 256, 56, 56])
+2024-09-25 12:00:03.201 | INFO     | __main__:run:183 - ID = 69.91 ± 3.83, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:00:03.442 | INFO     | __main__:run:154 - Hidden output shape of (22) layer2: torch.Size([16, 512, 28, 28])
+2024-09-25 12:00:56.355 | INFO     | __main__:run:183 - ID = 130.33 ± 24.96, anisotropy = 0.01 ± 0.0003
+
+2024-09-25 12:00:56.457 | INFO     | __main__:run:154 - Hidden output shape of (40) layer3: torch.Size([16, 1024, 14, 14])
+2024-09-25 12:01:20.226 | INFO     | __main__:run:183 - ID = 78.17 ± 3.84, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 12:01:20.349 | INFO     | __main__:run:154 - Hidden output shape of (49) layer4: torch.Size([16, 2048, 7, 7])
+2024-09-25 12:01:31.007 | INFO     | __main__:run:183 - ID = 38.72 ± 2.53, anisotropy = 0.07 ± 0.0018
+
+2024-09-25 12:01:31.100 | INFO     | __main__:run:154 - Hidden output shape of (50) avgpool: torch.Size([16, 2048, 1, 1])
+2024-09-25 12:01:32.957 | INFO     | __main__:run:183 - ID = 24.46 ± 1.25, anisotropy = 0.12 ± 0.0035
+
+2024-09-25 12:01:33.033 | INFO     | __main__:run:154 - Hidden output shape of (51) fc: torch.Size([16, 1000])
+2024-09-25 12:01:34.800 | INFO     | __main__:run:183 - ID = 23.29 ± 0.68, anisotropy = 0.14 ± 0.0043
+
+2024-09-25 12:01:34.800 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 12:01:34.881 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 12:01:50.765 | INFO     | __main__:run:183 - ID = 27.48 ± 0.87, anisotropy = 0.16 ± 0.0053
+
+2024-09-25 12:01:50.862 | INFO     | __main__:run:154 - Hidden output shape of (1) maxpool: torch.Size([16, 64, 56, 56])
+2024-09-25 12:02:14.581 | INFO     | __main__:run:183 - ID = 33.26 ± 1.94, anisotropy = 0.10 ± 0.0016
+
+2024-09-25 12:02:14.677 | INFO     | __main__:run:154 - Hidden output shape of (10) layer1: torch.Size([16, 256, 56, 56])
+2024-09-25 12:04:06.438 | INFO     | __main__:run:183 - ID = 99.54 ± 4.28, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:04:06.672 | INFO     | __main__:run:154 - Hidden output shape of (22) layer2: torch.Size([16, 512, 28, 28])
+2024-09-25 12:05:00.271 | INFO     | __main__:run:183 - ID = 70.08 ± 30.89, anisotropy = 0.02 ± 0.0002
+
+2024-09-25 12:05:00.500 | INFO     | __main__:run:154 - Hidden output shape of (40) layer3: torch.Size([16, 1024, 14, 14])
+2024-09-25 12:05:24.008 | INFO     | __main__:run:183 - ID = 49.68 ± 0.73, anisotropy = 0.02 ± 0.0002
+
+2024-09-25 12:05:24.105 | INFO     | __main__:run:154 - Hidden output shape of (49) layer4: torch.Size([16, 2048, 7, 7])
+2024-09-25 12:05:34.688 | INFO     | __main__:run:183 - ID = 34.18 ± 1.95, anisotropy = 0.07 ± 0.0018
+
+2024-09-25 12:05:34.785 | INFO     | __main__:run:154 - Hidden output shape of (50) avgpool: torch.Size([16, 2048, 1, 1])
+2024-09-25 12:05:36.803 | INFO     | __main__:run:183 - ID = 18.66 ± 1.39, anisotropy = 0.17 ± 0.0029
+
+2024-09-25 12:05:36.870 | INFO     | __main__:run:154 - Hidden output shape of (51) fc: torch.Size([16, 1000])
+2024-09-25 12:05:38.582 | INFO     | __main__:run:183 - ID = 15.45 ± 0.54, anisotropy = 0.22 ± 0.0063
+
+2024-09-25 12:05:38.584 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
+2024-09-25 12:05:38.586 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 12:05:42.349 | INFO     | __main__:run:75 - Model instantiated: facebook/convnext-tiny-224
+2024-09-25 12:05:42.349 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:get_layers:70 - Extracting facebook/convnext-tiny-224 layers:
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(1): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(2): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(3): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(4): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(5): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(6): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(7): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(8): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(9): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(10): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(11): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(12): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(13): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(14): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(15): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(16): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(17): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | INFO     | layers_extractor:_add_layer:138 - 	(18): 	ConvNextLayer added
+2024-09-25 12:05:42.350 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 12:05:42.351 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 12:05:42.406 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 12:05:58.023 | INFO     | __main__:run:183 - ID = 22.79 ± 0.67, anisotropy = 0.16 ± 0.0035
+
+2024-09-25 12:05:58.332 | INFO     | __main__:run:154 - Hidden output shape of (1) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:06:36.773 | INFO     | __main__:run:183 - ID = 61.77 ± 2.69, anisotropy = 0.04 ± 0.0005
+
+2024-09-25 12:06:36.876 | INFO     | __main__:run:154 - Hidden output shape of (2) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:07:15.076 | INFO     | __main__:run:183 - ID = 82.22 ± 7.83, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:07:15.167 | INFO     | __main__:run:154 - Hidden output shape of (3) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:07:52.887 | INFO     | __main__:run:183 - ID = 101.25 ± 37.76, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:07:52.976 | INFO     | __main__:run:154 - Hidden output shape of (4) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:08:09.611 | INFO     | __main__:run:183 - ID = 85.44 ± 5.46, anisotropy = 0.05 ± 0.0023
+
+2024-09-25 12:08:09.691 | INFO     | __main__:run:154 - Hidden output shape of (5) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:08:26.379 | INFO     | __main__:run:183 - ID = 91.57 ± 4.76, anisotropy = 0.09 ± 0.0037
+
+2024-09-25 12:08:26.456 | INFO     | __main__:run:154 - Hidden output shape of (6) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:08:43.257 | INFO     | __main__:run:183 - ID = 93.13 ± 2.86, anisotropy = 0.10 ± 0.0107
+
+2024-09-25 12:08:43.335 | INFO     | __main__:run:154 - Hidden output shape of (7) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:08:51.322 | INFO     | __main__:run:183 - ID = 73.15 ± 6.93, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:08:51.396 | INFO     | __main__:run:154 - Hidden output shape of (8) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:08:59.260 | INFO     | __main__:run:183 - ID = 81.69 ± 3.49, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 12:08:59.342 | INFO     | __main__:run:154 - Hidden output shape of (9) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:07.361 | INFO     | __main__:run:183 - ID = 59.65 ± 16.09, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:09:07.447 | INFO     | __main__:run:154 - Hidden output shape of (10) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:15.531 | INFO     | __main__:run:183 - ID = 89.56 ± 3.83, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 12:09:15.616 | INFO     | __main__:run:154 - Hidden output shape of (11) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:23.626 | INFO     | __main__:run:183 - ID = 68.90 ± 5.61, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:09:23.703 | INFO     | __main__:run:154 - Hidden output shape of (12) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:31.681 | INFO     | __main__:run:183 - ID = 66.22 ± 3.52, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 12:09:31.755 | INFO     | __main__:run:154 - Hidden output shape of (13) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:39.770 | INFO     | __main__:run:183 - ID = 36.90 ± 1.35, anisotropy = 0.09 ± 0.0031
+
+2024-09-25 12:09:39.849 | INFO     | __main__:run:154 - Hidden output shape of (14) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:47.879 | INFO     | __main__:run:183 - ID = 37.43 ± 1.26, anisotropy = 0.13 ± 0.0022
+
+2024-09-25 12:09:47.961 | INFO     | __main__:run:154 - Hidden output shape of (15) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:09:55.898 | INFO     | __main__:run:183 - ID = 38.58 ± 1.54, anisotropy = 0.14 ± 0.0040
+
+2024-09-25 12:09:55.978 | INFO     | __main__:run:154 - Hidden output shape of (16) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:10:00.503 | INFO     | __main__:run:183 - ID = 44.19 ± 2.04, anisotropy = 0.05 ± 0.0008
+
+2024-09-25 12:10:00.594 | INFO     | __main__:run:154 - Hidden output shape of (17) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:10:05.246 | INFO     | __main__:run:183 - ID = 35.14 ± 1.95, anisotropy = 0.06 ± 0.0017
+
+2024-09-25 12:10:05.333 | INFO     | __main__:run:154 - Hidden output shape of (18) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:10:10.050 | INFO     | __main__:run:183 - ID = 38.14 ± 2.52, anisotropy = 0.06 ± 0.0015
+
+2024-09-25 12:10:10.051 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 12:10:10.124 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 12:10:26.307 | INFO     | __main__:run:183 - ID = 32.30 ± 1.05, anisotropy = 0.13 ± 0.0043
+
+2024-09-25 12:10:26.407 | INFO     | __main__:run:154 - Hidden output shape of (1) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:11:04.640 | INFO     | __main__:run:183 - ID = 68.35 ± 2.94, anisotropy = 0.05 ± 0.0015
+
+2024-09-25 12:11:04.734 | INFO     | __main__:run:154 - Hidden output shape of (2) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:11:42.954 | INFO     | __main__:run:183 - ID = 115.46 ± 9.78, anisotropy = 0.03 ± 0.0012
+
+2024-09-25 12:11:43.056 | INFO     | __main__:run:154 - Hidden output shape of (3) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:12:21.508 | INFO     | __main__:run:183 - ID = 153.65 ± 4.93, anisotropy = 0.02 ± 0.0018
+
+2024-09-25 12:12:21.609 | INFO     | __main__:run:154 - Hidden output shape of (4) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:12:38.686 | INFO     | __main__:run:183 - ID = 79.72 ± 3.27, anisotropy = 0.03 ± 0.0008
+
+2024-09-25 12:12:38.780 | INFO     | __main__:run:154 - Hidden output shape of (5) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:12:55.693 | INFO     | __main__:run:183 - ID = 64.47 ± 3.62, anisotropy = 0.08 ± 0.0033
+
+2024-09-25 12:12:55.792 | INFO     | __main__:run:154 - Hidden output shape of (6) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:13:12.957 | INFO     | __main__:run:183 - ID = 64.00 ± 1.95, anisotropy = 0.14 ± 0.0432
+
+2024-09-25 12:13:13.050 | INFO     | __main__:run:154 - Hidden output shape of (7) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:13:21.144 | INFO     | __main__:run:183 - ID = 68.52 ± 4.62, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 12:13:21.236 | INFO     | __main__:run:154 - Hidden output shape of (8) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:13:29.271 | INFO     | __main__:run:183 - ID = 77.71 ± 3.97, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:13:29.361 | INFO     | __main__:run:154 - Hidden output shape of (9) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:13:37.280 | INFO     | __main__:run:183 - ID = 71.06 ± 6.82, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:13:37.368 | INFO     | __main__:run:154 - Hidden output shape of (10) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:13:45.258 | INFO     | __main__:run:183 - ID = 83.53 ± 2.52, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 12:13:45.345 | INFO     | __main__:run:154 - Hidden output shape of (11) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:13:53.408 | INFO     | __main__:run:183 - ID = 69.54 ± 2.93, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:13:53.497 | INFO     | __main__:run:154 - Hidden output shape of (12) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:14:01.434 | INFO     | __main__:run:183 - ID = 63.43 ± 2.06, anisotropy = 0.03 ± 0.0004
+
+2024-09-25 12:14:01.519 | INFO     | __main__:run:154 - Hidden output shape of (13) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:14:09.384 | INFO     | __main__:run:183 - ID = 45.14 ± 1.76, anisotropy = 0.07 ± 0.0023
+
+2024-09-25 12:14:09.472 | INFO     | __main__:run:154 - Hidden output shape of (14) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:14:17.457 | INFO     | __main__:run:183 - ID = 34.92 ± 0.85, anisotropy = 0.09 ± 0.0022
+
+2024-09-25 12:14:17.550 | INFO     | __main__:run:154 - Hidden output shape of (15) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:14:25.607 | INFO     | __main__:run:183 - ID = 34.38 ± 1.25, anisotropy = 0.12 ± 0.0059
+
+2024-09-25 12:14:25.698 | INFO     | __main__:run:154 - Hidden output shape of (16) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:14:30.255 | INFO     | __main__:run:183 - ID = 28.09 ± 1.42, anisotropy = 0.09 ± 0.0021
+
+2024-09-25 12:14:30.347 | INFO     | __main__:run:154 - Hidden output shape of (17) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:14:34.936 | INFO     | __main__:run:183 - ID = 18.75 ± 0.69, anisotropy = 0.12 ± 0.0036
+
+2024-09-25 12:14:35.028 | INFO     | __main__:run:154 - Hidden output shape of (18) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:14:39.648 | INFO     | __main__:run:183 - ID = 14.82 ± 0.83, anisotropy = 0.13 ± 0.0027
+
+2024-09-25 12:14:39.648 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 12:14:39.728 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 12:14:55.663 | INFO     | __main__:run:183 - ID = 22.80 ± 0.86, anisotropy = 0.17 ± 0.0061
+
+2024-09-25 12:14:55.765 | INFO     | __main__:run:154 - Hidden output shape of (1) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:15:34.845 | INFO     | __main__:run:183 - ID = 54.20 ± 0.91, anisotropy = 0.05 ± 0.0020
+
+2024-09-25 12:15:35.173 | INFO     | __main__:run:154 - Hidden output shape of (2) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:16:13.946 | INFO     | __main__:run:183 - ID = 146.05 ± 8.76, anisotropy = 0.03 ± 0.0009
+
+2024-09-25 12:16:14.047 | INFO     | __main__:run:154 - Hidden output shape of (3) ConvNextLayer: torch.Size([16, 96, 56, 56])
+2024-09-25 12:16:53.353 | INFO     | __main__:run:183 - ID = 98.28 ± 16.00, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 12:16:53.679 | INFO     | __main__:run:154 - Hidden output shape of (4) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:17:11.735 | INFO     | __main__:run:183 - ID = 73.12 ± 5.68, anisotropy = 0.06 ± 0.0027
+
+2024-09-25 12:17:11.864 | INFO     | __main__:run:154 - Hidden output shape of (5) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:17:29.479 | INFO     | __main__:run:183 - ID = 76.14 ± 5.02, anisotropy = 0.08 ± 0.0031
+
+2024-09-25 12:17:29.589 | INFO     | __main__:run:154 - Hidden output shape of (6) ConvNextLayer: torch.Size([16, 192, 28, 28])
+2024-09-25 12:17:46.682 | INFO     | __main__:run:183 - ID = 66.73 ± 5.30, anisotropy = 0.08 ± 0.0016
+
+2024-09-25 12:17:46.801 | INFO     | __main__:run:154 - Hidden output shape of (7) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:17:55.069 | INFO     | __main__:run:183 - ID = 66.67 ± 2.76, anisotropy = 0.02 ± 0.0008
+
+2024-09-25 12:17:55.173 | INFO     | __main__:run:154 - Hidden output shape of (8) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:03.053 | INFO     | __main__:run:183 - ID = 78.77 ± 10.77, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:18:03.138 | INFO     | __main__:run:154 - Hidden output shape of (9) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:11.084 | INFO     | __main__:run:183 - ID = 72.08 ± 1.66, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:18:11.175 | INFO     | __main__:run:154 - Hidden output shape of (10) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:19.165 | INFO     | __main__:run:183 - ID = 70.57 ± 1.08, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 12:18:19.254 | INFO     | __main__:run:154 - Hidden output shape of (11) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:27.164 | INFO     | __main__:run:183 - ID = 77.37 ± 9.74, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:18:27.251 | INFO     | __main__:run:154 - Hidden output shape of (12) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:35.225 | INFO     | __main__:run:183 - ID = 59.09 ± 2.16, anisotropy = 0.03 ± 0.0014
+
+2024-09-25 12:18:35.312 | INFO     | __main__:run:154 - Hidden output shape of (13) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:43.309 | INFO     | __main__:run:183 - ID = 35.01 ± 1.99, anisotropy = 0.09 ± 0.0024
+
+2024-09-25 12:18:43.408 | INFO     | __main__:run:154 - Hidden output shape of (14) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:51.349 | INFO     | __main__:run:183 - ID = 35.84 ± 2.33, anisotropy = 0.13 ± 0.0024
+
+2024-09-25 12:18:51.428 | INFO     | __main__:run:154 - Hidden output shape of (15) ConvNextLayer: torch.Size([16, 384, 14, 14])
+2024-09-25 12:18:59.406 | INFO     | __main__:run:183 - ID = 30.74 ± 1.37, anisotropy = 0.17 ± 0.0032
+
+2024-09-25 12:18:59.487 | INFO     | __main__:run:154 - Hidden output shape of (16) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:19:04.122 | INFO     | __main__:run:183 - ID = 37.71 ± 1.77, anisotropy = 0.05 ± 0.0008
+
+2024-09-25 12:19:04.215 | INFO     | __main__:run:154 - Hidden output shape of (17) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:19:08.889 | INFO     | __main__:run:183 - ID = 28.17 ± 1.46, anisotropy = 0.06 ± 0.0024
+
+2024-09-25 12:19:08.973 | INFO     | __main__:run:154 - Hidden output shape of (18) ConvNextLayer: torch.Size([16, 768, 7, 7])
+2024-09-25 12:19:13.600 | INFO     | __main__:run:183 - ID = 22.87 ± 0.99, anisotropy = 0.09 ± 0.0028
+
+2024-09-25 12:19:13.602 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
+2024-09-25 12:19:13.603 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 12:19:17.851 | INFO     | __main__:run:75 - Model instantiated: facebook/convnext-base-224
+2024-09-25 12:19:17.852 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:get_layers:70 - Extracting facebook/convnext-base-224 layers:
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(1): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(2): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(3): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(4): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(5): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(6): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(7): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(8): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(9): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(10): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(11): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(12): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(13): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(14): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(15): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(16): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(17): 	ConvNextLayer added
+2024-09-25 12:19:17.852 | INFO     | layers_extractor:_add_layer:138 - 	(18): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(19): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(20): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(21): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(22): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(23): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(24): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(25): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(26): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(27): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(28): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(29): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(30): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(31): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(32): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(33): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(34): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(35): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | INFO     | layers_extractor:_add_layer:138 - 	(36): 	ConvNextLayer added
+2024-09-25 12:19:17.853 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 12:19:17.853 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 12:19:17.914 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 12:19:33.636 | INFO     | __main__:run:183 - ID = 23.65 ± 1.25, anisotropy = 0.17 ± 0.0034
+
+2024-09-25 12:19:33.947 | INFO     | __main__:run:154 - Hidden output shape of (1) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 12:20:30.321 | INFO     | __main__:run:183 - ID = 61.24 ± 7.87, anisotropy = 0.03 ± 0.0008
+
+2024-09-25 12:20:30.739 | INFO     | __main__:run:154 - Hidden output shape of (2) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 12:21:27.348 | INFO     | __main__:run:183 - ID = 108.64 ± 24.64, anisotropy = 0.02 ± 0.0020
+
+2024-09-25 12:21:27.765 | INFO     | __main__:run:154 - Hidden output shape of (3) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 12:22:24.018 | INFO     | __main__:run:183 - ID = 73.80 ± 30.87, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 12:22:24.442 | INFO     | __main__:run:154 - Hidden output shape of (4) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 12:22:50.215 | INFO     | __main__:run:183 - ID = 79.44 ± 6.57, anisotropy = 0.03 ± 0.0010
+
+2024-09-25 12:22:50.310 | INFO     | __main__:run:154 - Hidden output shape of (5) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 12:23:15.937 | INFO     | __main__:run:183 - ID = 100.25 ± 6.22, anisotropy = 0.08 ± 0.0018
+
+2024-09-25 12:23:16.031 | INFO     | __main__:run:154 - Hidden output shape of (6) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 12:23:41.556 | INFO     | __main__:run:183 - ID = 99.74 ± 4.85, anisotropy = 0.05 ± 0.0022
+
+2024-09-25 12:23:41.647 | INFO     | __main__:run:154 - Hidden output shape of (7) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:23:54.006 | INFO     | __main__:run:183 - ID = 84.86 ± 12.73, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 12:23:54.094 | INFO     | __main__:run:154 - Hidden output shape of (8) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:24:06.558 | INFO     | __main__:run:183 - ID = 67.20 ± 0.93, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:24:06.657 | INFO     | __main__:run:154 - Hidden output shape of (9) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:24:19.184 | INFO     | __main__:run:183 - ID = 80.09 ± 15.38, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:24:19.275 | INFO     | __main__:run:154 - Hidden output shape of (10) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:24:31.751 | INFO     | __main__:run:183 - ID = 95.50 ± 8.50, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:24:31.843 | INFO     | __main__:run:154 - Hidden output shape of (11) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:24:44.331 | INFO     | __main__:run:183 - ID = 77.66 ± 2.46, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:24:44.419 | INFO     | __main__:run:154 - Hidden output shape of (12) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:24:57.057 | INFO     | __main__:run:183 - ID = 105.66 ± 7.15, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 12:24:57.153 | INFO     | __main__:run:154 - Hidden output shape of (13) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:25:09.751 | INFO     | __main__:run:183 - ID = 56.09 ± 1.46, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:25:09.847 | INFO     | __main__:run:154 - Hidden output shape of (14) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:25:22.485 | INFO     | __main__:run:183 - ID = 101.48 ± 3.61, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:25:22.571 | INFO     | __main__:run:154 - Hidden output shape of (15) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:25:35.668 | INFO     | __main__:run:183 - ID = 77.87 ± 2.62, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 12:25:35.759 | INFO     | __main__:run:154 - Hidden output shape of (16) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:25:48.356 | INFO     | __main__:run:183 - ID = 83.43 ± 3.38, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 12:25:48.448 | INFO     | __main__:run:154 - Hidden output shape of (17) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:26:01.075 | INFO     | __main__:run:183 - ID = 79.04 ± 1.57, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 12:26:01.176 | INFO     | __main__:run:154 - Hidden output shape of (18) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:26:13.732 | INFO     | __main__:run:183 - ID = 70.15 ± 4.76, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 12:26:13.821 | INFO     | __main__:run:154 - Hidden output shape of (19) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:26:26.385 | INFO     | __main__:run:183 - ID = 52.07 ± 1.72, anisotropy = 0.06 ± 0.0011
+
+2024-09-25 12:26:26.471 | INFO     | __main__:run:154 - Hidden output shape of (20) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:26:38.836 | INFO     | __main__:run:183 - ID = 54.63 ± 3.20, anisotropy = 0.06 ± 0.0018
+
+2024-09-25 12:26:38.927 | INFO     | __main__:run:154 - Hidden output shape of (21) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:26:51.343 | INFO     | __main__:run:183 - ID = 51.12 ± 3.63, anisotropy = 0.06 ± 0.0022
+
+2024-09-25 12:26:51.432 | INFO     | __main__:run:154 - Hidden output shape of (22) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:27:03.809 | INFO     | __main__:run:183 - ID = 48.14 ± 1.35, anisotropy = 0.06 ± 0.0018
+
+2024-09-25 12:27:03.891 | INFO     | __main__:run:154 - Hidden output shape of (23) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:27:16.328 | INFO     | __main__:run:183 - ID = 61.72 ± 3.85, anisotropy = 0.06 ± 0.0020
+
+2024-09-25 12:27:16.413 | INFO     | __main__:run:154 - Hidden output shape of (24) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:27:28.868 | INFO     | __main__:run:183 - ID = 43.45 ± 3.19, anisotropy = 0.12 ± 0.0021
+
+2024-09-25 12:27:28.959 | INFO     | __main__:run:154 - Hidden output shape of (25) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:27:41.330 | INFO     | __main__:run:183 - ID = 38.39 ± 1.56, anisotropy = 0.10 ± 0.0022
+
+2024-09-25 12:27:41.411 | INFO     | __main__:run:154 - Hidden output shape of (26) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:27:53.794 | INFO     | __main__:run:183 - ID = 35.26 ± 0.71, anisotropy = 0.13 ± 0.0042
+
+2024-09-25 12:27:53.890 | INFO     | __main__:run:154 - Hidden output shape of (27) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:28:06.418 | INFO     | __main__:run:183 - ID = 28.34 ± 1.38, anisotropy = 0.14 ± 0.0030
+
+2024-09-25 12:28:06.511 | INFO     | __main__:run:154 - Hidden output shape of (28) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:46:16.261 | INFO     | __main__:run:183 - ID = 25.53 ± 1.26, anisotropy = 0.16 ± 0.0062
+
+2024-09-25 12:46:16.361 | INFO     | __main__:run:154 - Hidden output shape of (29) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:46:28.591 | INFO     | __main__:run:183 - ID = 24.46 ± 1.78, anisotropy = 0.15 ± 0.0035
+
+2024-09-25 12:46:28.680 | INFO     | __main__:run:154 - Hidden output shape of (30) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 12:46:40.963 | INFO     | __main__:run:183 - ID = 22.81 ± 1.25, anisotropy = 0.16 ± 0.0023
+
+2024-09-25 12:46:41.061 | INFO     | __main__:run:154 - Hidden output shape of (31) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:04:34.758 | INFO     | __main__:run:183 - ID = 27.69 ± 1.35, anisotropy = 0.16 ± 0.0046
+
+2024-09-25 13:04:34.848 | INFO     | __main__:run:154 - Hidden output shape of (32) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:04:46.917 | INFO     | __main__:run:183 - ID = 23.53 ± 1.04, anisotropy = 0.14 ± 0.0048
+
+2024-09-25 13:04:47.004 | INFO     | __main__:run:154 - Hidden output shape of (33) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:07:24.112 | INFO     | __main__:run:183 - ID = 26.69 ± 0.97, anisotropy = 0.16 ± 0.0022
+
+2024-09-25 13:07:24.203 | INFO     | __main__:run:154 - Hidden output shape of (34) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 13:07:31.257 | INFO     | __main__:run:183 - ID = 35.22 ± 1.64, anisotropy = 0.07 ± 0.0021
+
+2024-09-25 13:07:31.341 | INFO     | __main__:run:154 - Hidden output shape of (35) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 13:07:38.445 | INFO     | __main__:run:183 - ID = 32.75 ± 0.92, anisotropy = 0.08 ± 0.0022
+
+2024-09-25 13:07:38.532 | INFO     | __main__:run:154 - Hidden output shape of (36) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 13:07:45.557 | INFO     | __main__:run:183 - ID = 31.62 ± 1.45, anisotropy = 0.09 ± 0.0026
+
+2024-09-25 13:07:45.557 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 13:07:45.621 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 13:08:01.103 | INFO     | __main__:run:183 - ID = 32.04 ± 2.25, anisotropy = 0.14 ± 0.0029
+
+2024-09-25 13:08:01.228 | INFO     | __main__:run:154 - Hidden output shape of (1) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 13:10:35.042 | INFO     | __main__:run:183 - ID = 88.92 ± 2.78, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 13:10:35.182 | INFO     | __main__:run:154 - Hidden output shape of (2) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 13:17:37.119 | INFO     | __main__:run:183 - ID = 109.13 ± 2.24, anisotropy = 0.02 ± 0.0002
+
+2024-09-25 13:17:37.225 | INFO     | __main__:run:154 - Hidden output shape of (3) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 13:21:30.910 | INFO     | __main__:run:183 - ID = 136.61 ± 7.53, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 13:21:31.010 | INFO     | __main__:run:154 - Hidden output shape of (4) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 13:26:25.973 | INFO     | __main__:run:183 - ID = 103.91 ± 4.20, anisotropy = 0.03 ± 0.0008
+
+2024-09-25 13:26:26.075 | INFO     | __main__:run:154 - Hidden output shape of (5) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 13:26:51.055 | INFO     | __main__:run:183 - ID = 90.97 ± 3.41, anisotropy = 0.05 ± 0.0013
+
+2024-09-25 13:26:51.167 | INFO     | __main__:run:154 - Hidden output shape of (6) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 13:28:45.236 | INFO     | __main__:run:183 - ID = 81.73 ± 4.87, anisotropy = 0.05 ± 0.0011
+
+2024-09-25 13:28:45.340 | INFO     | __main__:run:154 - Hidden output shape of (7) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:37:27.405 | INFO     | __main__:run:183 - ID = 82.48 ± 4.21, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 13:37:27.507 | INFO     | __main__:run:154 - Hidden output shape of (8) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:37:39.750 | INFO     | __main__:run:183 - ID = 71.64 ± 4.27, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 13:37:39.846 | INFO     | __main__:run:154 - Hidden output shape of (9) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:37:52.092 | INFO     | __main__:run:183 - ID = 95.67 ± 2.35, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 13:37:52.200 | INFO     | __main__:run:154 - Hidden output shape of (10) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:42:24.541 | INFO     | __main__:run:183 - ID = 72.62 ± 4.09, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 13:42:24.632 | INFO     | __main__:run:154 - Hidden output shape of (11) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:45:19.639 | INFO     | __main__:run:183 - ID = 69.25 ± 3.24, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 13:45:19.745 | INFO     | __main__:run:154 - Hidden output shape of (12) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:45:32.003 | INFO     | __main__:run:183 - ID = 87.85 ± 2.20, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 13:45:32.099 | INFO     | __main__:run:154 - Hidden output shape of (13) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:46:45.747 | INFO     | __main__:run:183 - ID = 76.12 ± 5.97, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 13:46:45.854 | INFO     | __main__:run:154 - Hidden output shape of (14) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:46:58.200 | INFO     | __main__:run:183 - ID = 65.20 ± 4.78, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 13:46:58.299 | INFO     | __main__:run:154 - Hidden output shape of (15) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:47:36.561 | INFO     | __main__:run:183 - ID = 66.67 ± 4.50, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 13:47:36.669 | INFO     | __main__:run:154 - Hidden output shape of (16) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:47:49.053 | INFO     | __main__:run:183 - ID = 77.42 ± 4.09, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 13:47:49.158 | INFO     | __main__:run:154 - Hidden output shape of (17) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:50:31.416 | INFO     | __main__:run:183 - ID = 61.44 ± 1.75, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 13:50:31.523 | INFO     | __main__:run:154 - Hidden output shape of (18) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:50:43.766 | INFO     | __main__:run:183 - ID = 69.83 ± 2.51, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 13:50:43.871 | INFO     | __main__:run:154 - Hidden output shape of (19) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:50:56.198 | INFO     | __main__:run:183 - ID = 46.41 ± 1.35, anisotropy = 0.07 ± 0.0018
+
+2024-09-25 13:50:56.293 | INFO     | __main__:run:154 - Hidden output shape of (20) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:54:35.310 | INFO     | __main__:run:183 - ID = 47.19 ± 2.03, anisotropy = 0.08 ± 0.0044
+
+2024-09-25 13:54:35.407 | INFO     | __main__:run:154 - Hidden output shape of (21) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:54:47.793 | INFO     | __main__:run:183 - ID = 59.58 ± 1.26, anisotropy = 0.07 ± 0.0025
+
+2024-09-25 13:54:47.888 | INFO     | __main__:run:154 - Hidden output shape of (22) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:58:28.568 | INFO     | __main__:run:183 - ID = 57.33 ± 3.08, anisotropy = 0.08 ± 0.0026
+
+2024-09-25 13:58:28.664 | INFO     | __main__:run:154 - Hidden output shape of (23) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:58:40.945 | INFO     | __main__:run:183 - ID = 50.31 ± 2.43, anisotropy = 0.08 ± 0.0028
+
+2024-09-25 13:58:41.044 | INFO     | __main__:run:154 - Hidden output shape of (24) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 13:58:53.212 | INFO     | __main__:run:183 - ID = 37.69 ± 1.48, anisotropy = 0.12 ± 0.0039
+
+2024-09-25 13:58:53.323 | INFO     | __main__:run:154 - Hidden output shape of (25) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:00:25.578 | INFO     | __main__:run:183 - ID = 44.21 ± 1.95, anisotropy = 0.13 ± 0.0041
+
+2024-09-25 14:00:25.677 | INFO     | __main__:run:154 - Hidden output shape of (26) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:00:37.999 | INFO     | __main__:run:183 - ID = 30.00 ± 1.45, anisotropy = 0.15 ± 0.0028
+
+2024-09-25 14:00:38.096 | INFO     | __main__:run:154 - Hidden output shape of (27) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:04:29.245 | INFO     | __main__:run:183 - ID = 28.50 ± 0.83, anisotropy = 0.16 ± 0.0047
+
+2024-09-25 14:04:29.345 | INFO     | __main__:run:154 - Hidden output shape of (28) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:04:41.698 | INFO     | __main__:run:183 - ID = 32.41 ± 2.35, anisotropy = 0.15 ± 0.0037
+
+2024-09-25 14:04:41.795 | INFO     | __main__:run:154 - Hidden output shape of (29) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:04:54.082 | INFO     | __main__:run:183 - ID = 25.20 ± 1.16, anisotropy = 0.14 ± 0.0034
+
+2024-09-25 14:04:54.176 | INFO     | __main__:run:154 - Hidden output shape of (30) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:10:25.750 | INFO     | __main__:run:183 - ID = 28.21 ± 0.37, anisotropy = 0.14 ± 0.0044
+
+2024-09-25 14:10:25.884 | INFO     | __main__:run:154 - Hidden output shape of (31) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:10:38.150 | INFO     | __main__:run:183 - ID = 28.60 ± 1.68, anisotropy = 0.10 ± 0.0032
+
+2024-09-25 14:10:38.253 | INFO     | __main__:run:154 - Hidden output shape of (32) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:13:07.860 | INFO     | __main__:run:183 - ID = 31.49 ± 1.12, anisotropy = 0.11 ± 0.0019
+
+2024-09-25 14:13:07.978 | INFO     | __main__:run:154 - Hidden output shape of (33) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:13:20.298 | INFO     | __main__:run:183 - ID = 29.02 ± 1.84, anisotropy = 0.12 ± 0.0039
+
+2024-09-25 14:13:20.397 | INFO     | __main__:run:154 - Hidden output shape of (34) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 14:13:27.559 | INFO     | __main__:run:183 - ID = 22.99 ± 0.32, anisotropy = 0.18 ± 0.0072
+
+2024-09-25 14:13:27.656 | INFO     | __main__:run:154 - Hidden output shape of (35) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 14:16:40.267 | INFO     | __main__:run:183 - ID = 21.26 ± 0.77, anisotropy = 0.18 ± 0.0050
+
+2024-09-25 14:16:40.386 | INFO     | __main__:run:154 - Hidden output shape of (36) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 14:16:47.847 | INFO     | __main__:run:183 - ID = 18.15 ± 0.53, anisotropy = 0.21 ± 0.0037
+
+2024-09-25 14:16:47.848 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 14:16:47.928 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:17:03.876 | INFO     | __main__:run:183 - ID = 21.29 ± 0.98, anisotropy = 0.15 ± 0.0066
+
+2024-09-25 14:17:04.295 | INFO     | __main__:run:154 - Hidden output shape of (1) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 14:18:00.812 | INFO     | __main__:run:183 - ID = 98.11 ± 14.55, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:18:01.237 | INFO     | __main__:run:154 - Hidden output shape of (2) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 14:18:57.362 | INFO     | __main__:run:183 - ID = 25.49 ± 0.63, anisotropy = 0.02 ± 0.0010
+
+2024-09-25 14:18:57.761 | INFO     | __main__:run:154 - Hidden output shape of (3) ConvNextLayer: torch.Size([16, 128, 56, 56])
+2024-09-25 14:19:53.620 | INFO     | __main__:run:183 - ID = 118.86 ± 19.43, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:19:54.036 | INFO     | __main__:run:154 - Hidden output shape of (4) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 14:20:19.690 | INFO     | __main__:run:183 - ID = 49.76 ± 18.86, anisotropy = 0.04 ± 0.0015
+
+2024-09-25 14:20:19.815 | INFO     | __main__:run:154 - Hidden output shape of (5) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 14:20:45.832 | INFO     | __main__:run:183 - ID = 102.80 ± 4.34, anisotropy = 0.07 ± 0.0030
+
+2024-09-25 14:20:46.240 | INFO     | __main__:run:154 - Hidden output shape of (6) ConvNextLayer: torch.Size([16, 256, 28, 28])
+2024-09-25 14:21:12.768 | INFO     | __main__:run:183 - ID = 110.87 ± 2.93, anisotropy = 0.06 ± 0.0056
+
+2024-09-25 14:21:13.153 | INFO     | __main__:run:154 - Hidden output shape of (7) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:21:26.100 | INFO     | __main__:run:183 - ID = 86.61 ± 2.98, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:21:26.211 | INFO     | __main__:run:154 - Hidden output shape of (8) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:21:38.795 | INFO     | __main__:run:183 - ID = 100.70 ± 2.15, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:21:38.906 | INFO     | __main__:run:154 - Hidden output shape of (9) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:21:51.763 | INFO     | __main__:run:183 - ID = 80.09 ± 2.55, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:21:52.163 | INFO     | __main__:run:154 - Hidden output shape of (10) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:22:05.174 | INFO     | __main__:run:183 - ID = 88.37 ± 3.50, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:22:05.272 | INFO     | __main__:run:154 - Hidden output shape of (11) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:22:19.114 | INFO     | __main__:run:183 - ID = 68.69 ± 6.66, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 14:22:19.692 | INFO     | __main__:run:154 - Hidden output shape of (12) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:22:33.437 | INFO     | __main__:run:183 - ID = 80.01 ± 3.15, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:22:33.548 | INFO     | __main__:run:154 - Hidden output shape of (13) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:22:46.537 | INFO     | __main__:run:183 - ID = 76.85 ± 2.47, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:22:46.647 | INFO     | __main__:run:154 - Hidden output shape of (14) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:22:59.850 | INFO     | __main__:run:183 - ID = 93.69 ± 4.31, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 14:22:59.962 | INFO     | __main__:run:154 - Hidden output shape of (15) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:23:13.206 | INFO     | __main__:run:183 - ID = 84.48 ± 2.73, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 14:23:13.311 | INFO     | __main__:run:154 - Hidden output shape of (16) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:23:26.480 | INFO     | __main__:run:183 - ID = 79.46 ± 5.52, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 14:23:26.580 | INFO     | __main__:run:154 - Hidden output shape of (17) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:23:39.626 | INFO     | __main__:run:183 - ID = 90.52 ± 7.96, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:23:39.733 | INFO     | __main__:run:154 - Hidden output shape of (18) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:23:53.026 | INFO     | __main__:run:183 - ID = 83.56 ± 4.48, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:23:53.160 | INFO     | __main__:run:154 - Hidden output shape of (19) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:24:06.335 | INFO     | __main__:run:183 - ID = 54.52 ± 3.23, anisotropy = 0.07 ± 0.0026
+
+2024-09-25 14:24:06.447 | INFO     | __main__:run:154 - Hidden output shape of (20) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:24:19.616 | INFO     | __main__:run:183 - ID = 48.55 ± 1.33, anisotropy = 0.08 ± 0.0017
+
+2024-09-25 14:24:19.720 | INFO     | __main__:run:154 - Hidden output shape of (21) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:24:32.696 | INFO     | __main__:run:183 - ID = 53.23 ± 2.43, anisotropy = 0.06 ± 0.0017
+
+2024-09-25 14:24:32.806 | INFO     | __main__:run:154 - Hidden output shape of (22) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:24:46.282 | INFO     | __main__:run:183 - ID = 49.96 ± 3.59, anisotropy = 0.08 ± 0.0021
+
+2024-09-25 14:24:46.381 | INFO     | __main__:run:154 - Hidden output shape of (23) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:25:00.233 | INFO     | __main__:run:183 - ID = 47.88 ± 3.20, anisotropy = 0.07 ± 0.0017
+
+2024-09-25 14:25:00.382 | INFO     | __main__:run:154 - Hidden output shape of (24) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:25:13.661 | INFO     | __main__:run:183 - ID = 33.41 ± 1.03, anisotropy = 0.13 ± 0.0047
+
+2024-09-25 14:25:13.766 | INFO     | __main__:run:154 - Hidden output shape of (25) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:25:27.348 | INFO     | __main__:run:183 - ID = 35.44 ± 2.05, anisotropy = 0.12 ± 0.0033
+
+2024-09-25 14:25:27.471 | INFO     | __main__:run:154 - Hidden output shape of (26) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:25:41.155 | INFO     | __main__:run:183 - ID = 34.03 ± 1.67, anisotropy = 0.13 ± 0.0028
+
+2024-09-25 14:25:41.274 | INFO     | __main__:run:154 - Hidden output shape of (27) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:25:54.636 | INFO     | __main__:run:183 - ID = 24.27 ± 1.24, anisotropy = 0.16 ± 0.0058
+
+2024-09-25 14:25:54.748 | INFO     | __main__:run:154 - Hidden output shape of (28) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:26:08.460 | INFO     | __main__:run:183 - ID = 24.30 ± 0.70, anisotropy = 0.18 ± 0.0055
+
+2024-09-25 14:26:08.572 | INFO     | __main__:run:154 - Hidden output shape of (29) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:26:21.653 | INFO     | __main__:run:183 - ID = 20.17 ± 0.74, anisotropy = 0.21 ± 0.0061
+
+2024-09-25 14:26:21.763 | INFO     | __main__:run:154 - Hidden output shape of (30) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:26:34.526 | INFO     | __main__:run:183 - ID = 20.70 ± 0.82, anisotropy = 0.22 ± 0.0068
+
+2024-09-25 14:26:34.617 | INFO     | __main__:run:154 - Hidden output shape of (31) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:26:47.114 | INFO     | __main__:run:183 - ID = 23.86 ± 0.25, anisotropy = 0.25 ± 0.0051
+
+2024-09-25 14:26:47.213 | INFO     | __main__:run:154 - Hidden output shape of (32) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:26:59.815 | INFO     | __main__:run:183 - ID = 26.00 ± 1.30, anisotropy = 0.31 ± 0.0073
+
+2024-09-25 14:26:59.920 | INFO     | __main__:run:154 - Hidden output shape of (33) ConvNextLayer: torch.Size([16, 512, 14, 14])
+2024-09-25 14:27:12.374 | INFO     | __main__:run:183 - ID = 23.90 ± 1.02, anisotropy = 0.29 ± 0.0033
+
+2024-09-25 14:27:12.476 | INFO     | __main__:run:154 - Hidden output shape of (34) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 14:27:19.749 | INFO     | __main__:run:183 - ID = 20.35 ± 1.84, anisotropy = 0.09 ± 0.0030
+
+2024-09-25 14:27:19.856 | INFO     | __main__:run:154 - Hidden output shape of (35) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 14:27:27.096 | INFO     | __main__:run:183 - ID = 20.13 ± 0.78, anisotropy = 0.10 ± 0.0020
+
+2024-09-25 14:27:27.196 | INFO     | __main__:run:154 - Hidden output shape of (36) ConvNextLayer: torch.Size([16, 1024, 7, 7])
+2024-09-25 14:27:34.465 | INFO     | __main__:run:183 - ID = 17.17 ± 0.59, anisotropy = 0.11 ± 0.0040
+
+2024-09-25 14:27:34.470 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
+2024-09-25 14:27:34.471 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 14:27:39.124 | INFO     | __main__:run:75 - Model instantiated: openai/clip-vit-base-patch16
+2024-09-25 14:27:39.125 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 14:27:39.125 | INFO     | layers_extractor:get_layers:70 - Extracting openai/clip-vit-base-patch16 layers:
+2024-09-25 14:27:39.125 | INFO     | layers_extractor:_add_layer:138 - 	(2): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.125 | INFO     | layers_extractor:_add_layer:138 - 	(3): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.125 | INFO     | layers_extractor:_add_layer:138 - 	(4): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.125 | INFO     | layers_extractor:_add_layer:138 - 	(5): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.125 | INFO     | layers_extractor:_add_layer:138 - 	(6): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(7): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(8): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(9): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(10): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(11): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(12): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | INFO     | layers_extractor:_add_layer:138 - 	(13): 	CLIPEncoderLayer added
+2024-09-25 14:27:39.126 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 14:27:41.875 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 14:27:41.928 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:27:57.491 | INFO     | __main__:run:183 - ID = 24.58 ± 1.25, anisotropy = 0.16 ± 0.0061
+
+2024-09-25 14:27:57.742 | INFO     | __main__:run:154 - Hidden output shape of (2) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:28:16.544 | INFO     | __main__:run:183 - ID = 227.20 ± 19.00, anisotropy = 0.01 ± 0.0003
+
+2024-09-25 14:28:16.666 | INFO     | __main__:run:154 - Hidden output shape of (3) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:28:35.145 | INFO     | __main__:run:183 - ID = 215.16 ± 13.80, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 14:28:35.264 | INFO     | __main__:run:154 - Hidden output shape of (4) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:28:53.898 | INFO     | __main__:run:183 - ID = 274.23 ± 6.30, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:28:54.013 | INFO     | __main__:run:154 - Hidden output shape of (5) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:29:12.578 | INFO     | __main__:run:183 - ID = 253.72 ± 23.89, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:29:12.699 | INFO     | __main__:run:154 - Hidden output shape of (6) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:29:31.361 | INFO     | __main__:run:183 - ID = 198.94 ± 15.69, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:29:31.485 | INFO     | __main__:run:154 - Hidden output shape of (7) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:29:50.198 | INFO     | __main__:run:183 - ID = 55.50 ± 1.72, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:29:50.318 | INFO     | __main__:run:154 - Hidden output shape of (8) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:30:09.682 | INFO     | __main__:run:183 - ID = 27.81 ± 0.71, anisotropy = 0.03 ± 0.0011
+
+2024-09-25 14:30:09.970 | INFO     | __main__:run:154 - Hidden output shape of (9) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:30:29.003 | INFO     | __main__:run:183 - ID = 22.93 ± 1.10, anisotropy = 0.03 ± 0.0012
+
+2024-09-25 14:30:29.125 | INFO     | __main__:run:154 - Hidden output shape of (10) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:30:48.177 | INFO     | __main__:run:183 - ID = 26.20 ± 1.13, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:30:48.330 | INFO     | __main__:run:154 - Hidden output shape of (11) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:31:07.426 | INFO     | __main__:run:183 - ID = 26.93 ± 0.92, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:31:07.556 | INFO     | __main__:run:154 - Hidden output shape of (12) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:31:26.298 | INFO     | __main__:run:183 - ID = 32.38 ± 1.21, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:31:26.420 | INFO     | __main__:run:154 - Hidden output shape of (13) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:31:45.198 | INFO     | __main__:run:183 - ID = 35.68 ± 1.84, anisotropy = 0.02 ± 0.0003
+
+2024-09-25 14:31:45.201 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 14:31:45.267 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:32:01.037 | INFO     | __main__:run:183 - ID = 31.92 ± 1.20, anisotropy = 0.15 ± 0.0078
+
+2024-09-25 14:32:01.166 | INFO     | __main__:run:154 - Hidden output shape of (2) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:32:20.208 | INFO     | __main__:run:183 - ID = 84.18 ± 60.06, anisotropy = 0.01 ± 0.0002
+
+2024-09-25 14:32:20.345 | INFO     | __main__:run:154 - Hidden output shape of (3) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:32:39.235 | INFO     | __main__:run:183 - ID = 122.62 ± 52.77, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:32:39.364 | INFO     | __main__:run:154 - Hidden output shape of (4) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:32:58.089 | INFO     | __main__:run:183 - ID = 228.59 ± 10.87, anisotropy = 0.02 ± 0.0002
+
+2024-09-25 14:32:58.221 | INFO     | __main__:run:154 - Hidden output shape of (5) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:33:16.845 | INFO     | __main__:run:183 - ID = 213.29 ± 11.05, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:33:16.973 | INFO     | __main__:run:154 - Hidden output shape of (6) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:33:35.667 | INFO     | __main__:run:183 - ID = 195.32 ± 6.56, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:33:35.799 | INFO     | __main__:run:154 - Hidden output shape of (7) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:33:54.543 | INFO     | __main__:run:183 - ID = 49.88 ± 3.03, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:33:54.669 | INFO     | __main__:run:154 - Hidden output shape of (8) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:34:13.566 | INFO     | __main__:run:183 - ID = 28.13 ± 1.25, anisotropy = 0.03 ± 0.0009
+
+2024-09-25 14:34:13.698 | INFO     | __main__:run:154 - Hidden output shape of (9) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:34:32.472 | INFO     | __main__:run:183 - ID = 24.93 ± 1.08, anisotropy = 0.03 ± 0.0009
+
+2024-09-25 14:34:32.606 | INFO     | __main__:run:154 - Hidden output shape of (10) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:34:51.470 | INFO     | __main__:run:183 - ID = 26.74 ± 0.95, anisotropy = 0.03 ± 0.0008
+
+2024-09-25 14:34:51.601 | INFO     | __main__:run:154 - Hidden output shape of (11) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:35:10.635 | INFO     | __main__:run:183 - ID = 28.11 ± 1.68, anisotropy = 0.03 ± 0.0008
+
+2024-09-25 14:35:10.769 | INFO     | __main__:run:154 - Hidden output shape of (12) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:35:29.616 | INFO     | __main__:run:183 - ID = 28.32 ± 1.02, anisotropy = 0.03 ± 0.0005
+
+2024-09-25 14:35:29.756 | INFO     | __main__:run:154 - Hidden output shape of (13) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:35:48.876 | INFO     | __main__:run:183 - ID = 34.06 ± 1.92, anisotropy = 0.03 ± 0.0005
+
+2024-09-25 14:35:48.879 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 14:35:48.974 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:36:05.436 | INFO     | __main__:run:183 - ID = 23.19 ± 1.14, anisotropy = 0.15 ± 0.0061
+
+2024-09-25 14:36:05.675 | INFO     | __main__:run:154 - Hidden output shape of (2) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:36:25.097 | INFO     | __main__:run:183 - ID = 203.92 ± 43.27, anisotropy = 0.01 ± 0.0003
+
+2024-09-25 14:36:25.487 | INFO     | __main__:run:154 - Hidden output shape of (3) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:36:44.719 | INFO     | __main__:run:183 - ID = 217.85 ± 22.13, anisotropy = 0.02 ± 0.0004
+
+2024-09-25 14:36:44.849 | INFO     | __main__:run:154 - Hidden output shape of (4) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:37:04.120 | INFO     | __main__:run:183 - ID = 136.29 ± 5.36, anisotropy = 0.02 ± 0.0006
+
+2024-09-25 14:37:04.256 | INFO     | __main__:run:154 - Hidden output shape of (5) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:37:23.401 | INFO     | __main__:run:183 - ID = 213.88 ± 18.38, anisotropy = 0.02 ± 0.0007
+
+2024-09-25 14:37:23.536 | INFO     | __main__:run:154 - Hidden output shape of (6) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:37:43.054 | INFO     | __main__:run:183 - ID = 213.88 ± 11.05, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 14:37:43.372 | INFO     | __main__:run:154 - Hidden output shape of (7) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:38:03.384 | INFO     | __main__:run:183 - ID = 59.31 ± 4.43, anisotropy = 0.02 ± 0.0005
+
+2024-09-25 14:38:03.779 | INFO     | __main__:run:154 - Hidden output shape of (8) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:38:23.150 | INFO     | __main__:run:183 - ID = 26.05 ± 0.86, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:38:23.287 | INFO     | __main__:run:154 - Hidden output shape of (9) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:38:42.669 | INFO     | __main__:run:183 - ID = 23.24 ± 1.29, anisotropy = 0.03 ± 0.0007
+
+2024-09-25 14:38:42.834 | INFO     | __main__:run:154 - Hidden output shape of (10) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:39:02.072 | INFO     | __main__:run:183 - ID = 27.48 ± 1.24, anisotropy = 0.03 ± 0.0011
+
+2024-09-25 14:39:02.249 | INFO     | __main__:run:154 - Hidden output shape of (11) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:39:21.390 | INFO     | __main__:run:183 - ID = 29.22 ± 0.92, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:39:21.515 | INFO     | __main__:run:154 - Hidden output shape of (12) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:39:40.673 | INFO     | __main__:run:183 - ID = 29.87 ± 1.08, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:39:40.790 | INFO     | __main__:run:154 - Hidden output shape of (13) CLIPEncoderLayer: torch.Size([16, 197, 768])
+2024-09-25 14:39:59.825 | INFO     | __main__:run:183 - ID = 34.80 ± 1.50, anisotropy = 0.03 ± 0.0006
+
+2024-09-25 14:39:59.829 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
+2024-09-25 14:39:59.831 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 14:40:03.390 | INFO     | __main__:run:75 - Model instantiated: microsoft/beit-base-patch16-224
+2024-09-25 14:40:03.391 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:get_layers:70 - Extracting microsoft/beit-base-patch16-224 layers:
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(1): 	BeitEmbeddings added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(2): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(3): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(4): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(5): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(6): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(7): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(8): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(9): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(10): 	BeitLayer added
+2024-09-25 14:40:03.391 | INFO     | layers_extractor:_add_layer:138 - 	(11): 	BeitLayer added
+2024-09-25 14:40:03.392 | INFO     | layers_extractor:_add_layer:138 - 	(12): 	BeitLayer added
+2024-09-25 14:40:03.392 | INFO     | layers_extractor:_add_layer:138 - 	(13): 	BeitLayer added
+2024-09-25 14:40:03.392 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 14:40:03.392 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 14:40:03.443 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:40:18.993 | INFO     | __main__:run:183 - ID = 23.30 ± 0.81, anisotropy = 0.14 ± 0.0028
+
+2024-09-25 14:40:19.338 | INFO     | __main__:run:154 - Hidden output shape of (1) BeitEmbeddings: torch.Size([16, 197, 768])
+2024-09-25 14:40:37.386 | INFO     | __main__:run:183 - ID = 28.98 ± 2.76, anisotropy = 0.12 ± 0.0024
+
+2024-09-25 14:40:37.670 | INFO     | __main__:run:154 - Hidden output shape of (2) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:40:55.619 | INFO     | __main__:run:183 - ID = 36.61 ± 2.33, anisotropy = 0.10 ± 0.0035
+
+2024-09-25 14:40:55.901 | INFO     | __main__:run:154 - Hidden output shape of (3) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:41:13.991 | INFO     | __main__:run:183 - ID = 40.13 ± 5.44, anisotropy = 0.08 ± 0.0013
+
+2024-09-25 14:41:14.277 | INFO     | __main__:run:154 - Hidden output shape of (4) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:41:32.222 | INFO     | __main__:run:183 - ID = 36.28 ± 1.45, anisotropy = 0.09 ± 0.0020
+
+2024-09-25 14:41:32.498 | INFO     | __main__:run:154 - Hidden output shape of (5) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:41:50.370 | INFO     | __main__:run:183 - ID = 40.50 ± 2.77, anisotropy = 0.08 ± 0.0026
+
+2024-09-25 14:41:50.651 | INFO     | __main__:run:154 - Hidden output shape of (6) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:42:08.590 | INFO     | __main__:run:183 - ID = 45.15 ± 2.94, anisotropy = 0.19 ± 0.0041
+
+2024-09-25 14:42:08.869 | INFO     | __main__:run:154 - Hidden output shape of (7) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:42:26.707 | INFO     | __main__:run:183 - ID = 28.98 ± 1.99, anisotropy = 0.20 ± 0.0062
+
+2024-09-25 14:42:26.983 | INFO     | __main__:run:154 - Hidden output shape of (8) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:42:44.808 | INFO     | __main__:run:183 - ID = 32.79 ± 1.72, anisotropy = 0.21 ± 0.0030
+
+2024-09-25 14:42:45.080 | INFO     | __main__:run:154 - Hidden output shape of (9) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:43:02.904 | INFO     | __main__:run:183 - ID = 31.56 ± 1.07, anisotropy = 0.25 ± 0.0041
+
+2024-09-25 14:43:03.193 | INFO     | __main__:run:154 - Hidden output shape of (10) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:43:21.062 | INFO     | __main__:run:183 - ID = 35.55 ± 2.20, anisotropy = 0.20 ± 0.0032
+
+2024-09-25 14:43:21.339 | INFO     | __main__:run:154 - Hidden output shape of (11) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:43:39.152 | INFO     | __main__:run:183 - ID = 47.81 ± 3.18, anisotropy = 0.20 ± 0.0023
+
+2024-09-25 14:43:39.425 | INFO     | __main__:run:154 - Hidden output shape of (12) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:43:57.306 | INFO     | __main__:run:183 - ID = 57.44 ± 3.56, anisotropy = 0.13 ± 0.0038
+
+2024-09-25 14:43:57.576 | INFO     | __main__:run:154 - Hidden output shape of (13) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:44:15.483 | INFO     | __main__:run:183 - ID = 58.42 ± 12.27, anisotropy = 0.08 ± 0.0013
+
+2024-09-25 14:44:15.484 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 14:44:15.560 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:44:31.243 | INFO     | __main__:run:183 - ID = 32.40 ± 1.34, anisotropy = 0.14 ± 0.0061
+
+2024-09-25 14:44:31.526 | INFO     | __main__:run:154 - Hidden output shape of (1) BeitEmbeddings: torch.Size([16, 197, 768])
+2024-09-25 14:44:49.637 | INFO     | __main__:run:183 - ID = 41.41 ± 1.25, anisotropy = 0.09 ± 0.0034
+
+2024-09-25 14:44:49.925 | INFO     | __main__:run:154 - Hidden output shape of (2) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:45:07.960 | INFO     | __main__:run:183 - ID = 68.02 ± 9.37, anisotropy = 0.08 ± 0.0027
+
+2024-09-25 14:45:08.264 | INFO     | __main__:run:154 - Hidden output shape of (3) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:45:26.296 | INFO     | __main__:run:183 - ID = 50.80 ± 2.53, anisotropy = 0.10 ± 0.0032
+
+2024-09-25 14:45:26.587 | INFO     | __main__:run:154 - Hidden output shape of (4) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:45:44.623 | INFO     | __main__:run:183 - ID = 51.53 ± 7.15, anisotropy = 0.08 ± 0.0026
+
+2024-09-25 14:45:44.910 | INFO     | __main__:run:154 - Hidden output shape of (5) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:46:02.995 | INFO     | __main__:run:183 - ID = 61.59 ± 3.71, anisotropy = 0.09 ± 0.0044
+
+2024-09-25 14:46:03.281 | INFO     | __main__:run:154 - Hidden output shape of (6) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:46:21.442 | INFO     | __main__:run:183 - ID = 52.88 ± 2.44, anisotropy = 0.27 ± 0.0162
+
+2024-09-25 14:46:21.730 | INFO     | __main__:run:154 - Hidden output shape of (7) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:46:39.869 | INFO     | __main__:run:183 - ID = 48.94 ± 3.10, anisotropy = 0.32 ± 0.0058
+
+2024-09-25 14:46:40.157 | INFO     | __main__:run:154 - Hidden output shape of (8) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:46:58.246 | INFO     | __main__:run:183 - ID = 37.53 ± 4.19, anisotropy = 0.28 ± 0.0085
+
+2024-09-25 14:46:58.531 | INFO     | __main__:run:154 - Hidden output shape of (9) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:47:16.585 | INFO     | __main__:run:183 - ID = 45.93 ± 1.96, anisotropy = 0.35 ± 0.0096
+
+2024-09-25 14:47:16.875 | INFO     | __main__:run:154 - Hidden output shape of (10) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:47:34.971 | INFO     | __main__:run:183 - ID = 47.81 ± 2.18, anisotropy = 0.29 ± 0.0072
+
+2024-09-25 14:47:35.257 | INFO     | __main__:run:154 - Hidden output shape of (11) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:47:53.356 | INFO     | __main__:run:183 - ID = 41.05 ± 2.34, anisotropy = 0.32 ± 0.0063
+
+2024-09-25 14:47:53.633 | INFO     | __main__:run:154 - Hidden output shape of (12) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:48:11.745 | INFO     | __main__:run:183 - ID = 51.97 ± 1.56, anisotropy = 0.21 ± 0.0051
+
+2024-09-25 14:48:12.036 | INFO     | __main__:run:154 - Hidden output shape of (13) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:48:30.166 | INFO     | __main__:run:183 - ID = 67.08 ± 3.77, anisotropy = 0.12 ± 0.0043
+
+2024-09-25 14:48:30.168 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 14:48:30.243 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 14:48:45.814 | INFO     | __main__:run:183 - ID = 22.51 ± 0.90, anisotropy = 0.17 ± 0.0078
+
+2024-09-25 14:48:46.096 | INFO     | __main__:run:154 - Hidden output shape of (1) BeitEmbeddings: torch.Size([16, 197, 768])
+2024-09-25 14:49:04.076 | INFO     | __main__:run:183 - ID = 31.07 ± 1.15, anisotropy = 0.13 ± 0.0026
+
+2024-09-25 14:49:04.354 | INFO     | __main__:run:154 - Hidden output shape of (2) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:49:22.302 | INFO     | __main__:run:183 - ID = 41.72 ± 1.62, anisotropy = 0.10 ± 0.0071
+
+2024-09-25 14:49:22.583 | INFO     | __main__:run:154 - Hidden output shape of (3) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:49:40.587 | INFO     | __main__:run:183 - ID = 32.06 ± 4.11, anisotropy = 0.12 ± 0.0070
+
+2024-09-25 14:49:40.865 | INFO     | __main__:run:154 - Hidden output shape of (4) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:49:58.821 | INFO     | __main__:run:183 - ID = 53.98 ± 2.79, anisotropy = 0.11 ± 0.0052
+
+2024-09-25 14:49:59.109 | INFO     | __main__:run:154 - Hidden output shape of (5) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:50:17.152 | INFO     | __main__:run:183 - ID = 46.52 ± 3.28, anisotropy = 0.09 ± 0.0084
+
+2024-09-25 14:50:17.449 | INFO     | __main__:run:154 - Hidden output shape of (6) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:50:35.461 | INFO     | __main__:run:183 - ID = 49.30 ± 1.91, anisotropy = 0.23 ± 0.0026
+
+2024-09-25 14:50:35.737 | INFO     | __main__:run:154 - Hidden output shape of (7) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:50:53.780 | INFO     | __main__:run:183 - ID = 40.83 ± 2.07, anisotropy = 0.26 ± 0.0065
+
+2024-09-25 14:50:54.067 | INFO     | __main__:run:154 - Hidden output shape of (8) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:51:12.168 | INFO     | __main__:run:183 - ID = 37.24 ± 1.47, anisotropy = 0.20 ± 0.0062
+
+2024-09-25 14:51:12.885 | INFO     | __main__:run:154 - Hidden output shape of (9) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:52:51.450 | INFO     | __main__:run:183 - ID = 39.50 ± 2.51, anisotropy = 0.27 ± 0.0101
+
+2024-09-25 14:52:51.728 | INFO     | __main__:run:154 - Hidden output shape of (10) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:55:38.909 | INFO     | __main__:run:183 - ID = 37.36 ± 1.88, anisotropy = 0.22 ± 0.0057
+
+2024-09-25 14:55:39.186 | INFO     | __main__:run:154 - Hidden output shape of (11) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:56:03.760 | INFO     | __main__:run:183 - ID = 48.85 ± 2.60, anisotropy = 0.23 ± 0.0061
+
+2024-09-25 14:56:04.495 | INFO     | __main__:run:154 - Hidden output shape of (12) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:57:37.323 | INFO     | __main__:run:183 - ID = 64.14 ± 3.32, anisotropy = 0.16 ± 0.0040
+
+2024-09-25 14:57:37.613 | INFO     | __main__:run:154 - Hidden output shape of (13) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 14:58:41.787 | INFO     | __main__:run:183 - ID = 66.78 ± 25.03, anisotropy = 0.08 ± 0.0020
+
+2024-09-25 14:58:41.791 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
+2024-09-25 14:58:41.793 | INFO     | __main__:run:73 - Experiment started
+2024-09-25 14:58:46.399 | INFO     | __main__:run:75 - Model instantiated: microsoft/beit-base-patch16-224-pt22k-ft22k
+2024-09-25 14:58:46.400 | INFO     | __main__:run:77 - Is model in training mode: False
+
+2024-09-25 14:58:46.400 | INFO     | layers_extractor:get_layers:70 - Extracting microsoft/beit-base-patch16-224-pt22k-ft22k layers:
+2024-09-25 14:58:46.400 | INFO     | layers_extractor:_add_layer:138 - 	(1): 	BeitEmbeddings added
+2024-09-25 14:58:46.400 | INFO     | layers_extractor:_add_layer:138 - 	(2): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(3): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(4): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(5): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(6): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(7): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(8): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(9): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(10): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(11): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(12): 	BeitLayer added
+2024-09-25 14:58:46.401 | INFO     | layers_extractor:_add_layer:138 - 	(13): 	BeitLayer added
+2024-09-25 14:58:46.402 | SUCCESS  | layers_extractor:get_layers:86 - Layers/modules extracted!
+
+2024-09-25 14:58:46.402 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-09-25 14:58:46.512 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 15:00:38.685 | INFO     | __main__:run:183 - ID = 23.88 ± 0.96, anisotropy = 0.18 ± 0.0059
+
+2024-09-25 15:00:38.976 | INFO     | __main__:run:154 - Hidden output shape of (1) BeitEmbeddings: torch.Size([16, 197, 768])
+2024-09-25 15:00:56.727 | INFO     | __main__:run:183 - ID = 25.07 ± 2.95, anisotropy = 0.12 ± 0.0024
+
+2024-09-25 15:00:56.994 | INFO     | __main__:run:154 - Hidden output shape of (2) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:02:53.944 | INFO     | __main__:run:183 - ID = 33.79 ± 2.35, anisotropy = 0.09 ± 0.0025
+
+2024-09-25 15:02:54.240 | INFO     | __main__:run:154 - Hidden output shape of (3) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:03:11.867 | INFO     | __main__:run:183 - ID = 39.58 ± 1.98, anisotropy = 0.10 ± 0.0029
+
+2024-09-25 15:03:12.141 | INFO     | __main__:run:154 - Hidden output shape of (4) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:04:47.946 | INFO     | __main__:run:183 - ID = 45.34 ± 2.71, anisotropy = 0.08 ± 0.0012
+
+2024-09-25 15:04:48.227 | INFO     | __main__:run:154 - Hidden output shape of (5) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:05:05.942 | INFO     | __main__:run:183 - ID = 40.51 ± 1.64, anisotropy = 0.09 ± 0.0019
+
+2024-09-25 15:05:06.217 | INFO     | __main__:run:154 - Hidden output shape of (6) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:06:54.858 | INFO     | __main__:run:183 - ID = 35.80 ± 2.21, anisotropy = 0.15 ± 0.0040
+
+2024-09-25 15:06:55.146 | INFO     | __main__:run:154 - Hidden output shape of (7) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:11:43.536 | INFO     | __main__:run:183 - ID = 28.68 ± 0.88, anisotropy = 0.19 ± 0.0062
+
+2024-09-25 15:11:43.817 | INFO     | __main__:run:154 - Hidden output shape of (8) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:12:01.424 | INFO     | __main__:run:183 - ID = 28.00 ± 2.41, anisotropy = 0.19 ± 0.0065
+
+2024-09-25 15:12:01.709 | INFO     | __main__:run:154 - Hidden output shape of (9) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:15:49.040 | INFO     | __main__:run:183 - ID = 31.98 ± 2.03, anisotropy = 0.26 ± 0.0052
+
+2024-09-25 15:15:49.312 | INFO     | __main__:run:154 - Hidden output shape of (10) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:16:06.848 | INFO     | __main__:run:183 - ID = 36.82 ± 2.10, anisotropy = 0.21 ± 0.0017
+
+2024-09-25 15:16:07.120 | INFO     | __main__:run:154 - Hidden output shape of (11) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:25:55.496 | INFO     | __main__:run:183 - ID = 44.96 ± 2.19, anisotropy = 0.23 ± 0.0050
+
+2024-09-25 15:25:55.762 | INFO     | __main__:run:154 - Hidden output shape of (12) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:28:43.365 | INFO     | __main__:run:183 - ID = 58.09 ± 3.55, anisotropy = 0.14 ± 0.0044
+
+2024-09-25 15:28:43.649 | INFO     | __main__:run:154 - Hidden output shape of (13) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:30:54.483 | INFO     | __main__:run:183 - ID = 40.03 ± 3.53, anisotropy = 0.08 ± 0.0030
+
+2024-09-25 15:30:54.486 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: BUTTERFLY
+
+2024-09-25 15:30:54.570 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 15:34:40.032 | INFO     | __main__:run:183 - ID = 32.10 ± 1.66, anisotropy = 0.15 ± 0.0091
+
+2024-09-25 15:34:40.319 | INFO     | __main__:run:154 - Hidden output shape of (1) BeitEmbeddings: torch.Size([16, 197, 768])
+2024-09-25 15:34:58.109 | INFO     | __main__:run:183 - ID = 42.46 ± 3.74, anisotropy = 0.09 ± 0.0019
+
+2024-09-25 15:34:58.383 | INFO     | __main__:run:154 - Hidden output shape of (2) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:37:02.257 | INFO     | __main__:run:183 - ID = 47.57 ± 1.64, anisotropy = 0.09 ± 0.0018
+
+2024-09-25 15:37:02.543 | INFO     | __main__:run:154 - Hidden output shape of (3) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:40:41.892 | INFO     | __main__:run:183 - ID = 60.13 ± 1.91, anisotropy = 0.09 ± 0.0037
+
+2024-09-25 15:40:42.181 | INFO     | __main__:run:154 - Hidden output shape of (4) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:49:44.937 | INFO     | __main__:run:183 - ID = 44.58 ± 2.99, anisotropy = 0.11 ± 0.0092
+
+2024-09-25 15:49:45.223 | INFO     | __main__:run:154 - Hidden output shape of (5) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 15:57:47.925 | INFO     | __main__:run:183 - ID = 63.41 ± 2.35, anisotropy = 0.09 ± 0.0042
+
+2024-09-25 16:07:42.759 | INFO     | __main__:run:154 - Hidden output shape of (6) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:11:46.367 | INFO     | __main__:run:183 - ID = 57.17 ± 2.04, anisotropy = 0.23 ± 0.0105
+
+2024-09-25 16:11:46.659 | INFO     | __main__:run:154 - Hidden output shape of (7) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:19:44.316 | INFO     | __main__:run:183 - ID = 39.66 ± 1.98, anisotropy = 0.30 ± 0.0107
+
+2024-09-25 16:19:44.621 | INFO     | __main__:run:154 - Hidden output shape of (8) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:25:49.429 | INFO     | __main__:run:183 - ID = 39.47 ± 2.20, anisotropy = 0.28 ± 0.0112
+
+2024-09-25 16:25:49.721 | INFO     | __main__:run:154 - Hidden output shape of (9) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:30:47.224 | INFO     | __main__:run:183 - ID = 39.70 ± 1.51, anisotropy = 0.31 ± 0.0085
+
+2024-09-25 16:30:47.508 | INFO     | __main__:run:154 - Hidden output shape of (10) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:32:50.797 | INFO     | __main__:run:183 - ID = 46.18 ± 1.05, anisotropy = 0.31 ± 0.0047
+
+2024-09-25 16:32:52.388 | INFO     | __main__:run:154 - Hidden output shape of (11) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:40:16.408 | INFO     | __main__:run:183 - ID = 46.31 ± 1.61, anisotropy = 0.28 ± 0.0053
+
+2024-09-25 16:40:16.701 | INFO     | __main__:run:154 - Hidden output shape of (12) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:42:46.870 | INFO     | __main__:run:183 - ID = 49.00 ± 3.11, anisotropy = 0.18 ± 0.0071
+
+2024-09-25 16:42:47.148 | INFO     | __main__:run:154 - Hidden output shape of (13) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 16:44:16.556 | INFO     | __main__:run:183 - ID = 56.34 ± 4.87, anisotropy = 0.12 ± 0.0024
+
+2024-09-25 16:44:16.558 | INFO     | __main__:run:113 - Calculating intrinsic topology for data category: MIX
+
+2024-09-25 16:44:16.643 | INFO     | __main__:run:129 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-09-25 16:48:18.297 | INFO     | __main__:run:183 - ID = 26.84 ± 1.02, anisotropy = 0.16 ± 0.0044
+
+2024-09-25 16:50:47.510 | INFO     | __main__:run:154 - Hidden output shape of (1) BeitEmbeddings: torch.Size([16, 197, 768])
+2024-09-25 16:52:15.558 | INFO     | __main__:run:183 - ID = 32.13 ± 1.05, anisotropy = 0.13 ± 0.0062
+
+2024-09-25 16:52:15.836 | INFO     | __main__:run:154 - Hidden output shape of (2) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:15:21.606 | INFO     | __main__:run:183 - ID = 44.92 ± 7.37, anisotropy = 0.13 ± 0.0013
+
+2024-09-25 17:15:21.890 | INFO     | __main__:run:154 - Hidden output shape of (3) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:19:18.493 | INFO     | __main__:run:183 - ID = 37.65 ± 0.93, anisotropy = 0.09 ± 0.0010
+
+2024-09-25 17:19:18.774 | INFO     | __main__:run:154 - Hidden output shape of (4) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:23:14.783 | INFO     | __main__:run:183 - ID = 47.52 ± 6.01, anisotropy = 0.10 ± 0.0035
+
+2024-09-25 17:23:15.159 | INFO     | __main__:run:154 - Hidden output shape of (5) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:29:01.893 | INFO     | __main__:run:183 - ID = 49.15 ± 2.69, anisotropy = 0.09 ± 0.0045
+
+2024-09-25 17:29:04.031 | INFO     | __main__:run:154 - Hidden output shape of (6) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:29:30.172 | INFO     | __main__:run:183 - ID = 43.97 ± 2.13, anisotropy = 0.21 ± 0.0073
+
+2024-09-25 17:29:30.463 | INFO     | __main__:run:154 - Hidden output shape of (7) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:32:13.588 | INFO     | __main__:run:183 - ID = 36.96 ± 2.36, anisotropy = 0.24 ± 0.0094
+
+2024-09-25 17:32:13.868 | INFO     | __main__:run:154 - Hidden output shape of (8) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 17:46:02.170 | INFO     | __main__:run:183 - ID = 34.63 ± 1.38, anisotropy = 0.22 ± 0.0078
+
+2024-09-25 17:46:02.459 | INFO     | __main__:run:154 - Hidden output shape of (9) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 18:15:22.201 | INFO     | __main__:run:183 - ID = 41.49 ± 2.54, anisotropy = 0.24 ± 0.0045
+
+2024-09-25 18:15:22.484 | INFO     | __main__:run:154 - Hidden output shape of (10) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 18:15:41.434 | INFO     | __main__:run:183 - ID = 43.33 ± 1.58, anisotropy = 0.26 ± 0.0047
+
+2024-09-25 18:15:41.712 | INFO     | __main__:run:154 - Hidden output shape of (11) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 18:31:46.236 | INFO     | __main__:run:183 - ID = 36.58 ± 3.03, anisotropy = 0.24 ± 0.0089
+
+2024-09-25 18:31:46.527 | INFO     | __main__:run:154 - Hidden output shape of (12) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 18:48:43.108 | INFO     | __main__:run:183 - ID = 60.82 ± 6.04, anisotropy = 0.19 ± 0.0050
+
+2024-09-25 18:48:43.392 | INFO     | __main__:run:154 - Hidden output shape of (13) BeitLayer: torch.Size([16, 197, 768])
+2024-09-25 18:49:01.037 | INFO     | __main__:run:183 - ID = 84.72 ± 5.39, anisotropy = 0.09 ± 0.0026
+
+2024-09-25 18:49:01.042 | SUCCESS  | __main__:run:206 - Results saved at /Users/tonyg/Documents/_PHD_RESEARCH/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment
+
+
