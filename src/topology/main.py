@@ -12,6 +12,7 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from torchvision.models import alexnet, resnet50
+from transformers import AutoProcessor, AutoModel
 from transformers import (BeitForImageClassification, 
                           CLIPModel, CLIPProcessor, 
                           ConvNextModel)
@@ -58,7 +59,9 @@ architecture_model_map = {
     "microsoft/beit-base-patch16-224": 
         lambda: BeitForImageClassification.from_pretrained("microsoft/beit-base-patch16-224"),
     "microsoft/beit-base-patch16-224-pt22k-ft22k": 
-        lambda: BeitForImageClassification.from_pretrained("microsoft/beit-base-patch16-224-pt22k-ft22k")
+        lambda: BeitForImageClassification.from_pretrained("microsoft/beit-base-patch16-224-pt22k-ft22k"),
+    "google/siglip-so400m-patch14-384":
+        lambda: AutoModel.from_pretrained("google/siglip-so400m-patch14-384"),
 }
 
 
@@ -91,6 +94,8 @@ def run(architecture_name):
 
     if "clip" in architecture_name:
         clip_processor = CLIPProcessor.from_pretrained(architecture_name)
+    elif "siglip" in architecture_name:  
+        siglip_processor = AutoProcessor.from_pretrained(architecture_name)
 
     # num_layers = len(layers)
     num_data_points = int(np.floor(setup.NUM_SAMPLES * setup.PORTION_TO_SAMPLE))  # by default 450 out of 500
@@ -140,6 +145,19 @@ def run(architecture_name):
                             inputs = {k: v.to(device) for k, v in inputs.items()}
                             with torch.no_grad():
                                 model_outputs = model.get_image_features(**inputs)
+
+                        elif "siglip" in architecture_name:
+                            to_pil = transforms.ToPILImage()
+                            # Convert batch to a list of PIL images:
+                            pil_images = [to_pil(inputs[i]) for i in range(inputs.size(0))]
+                            
+                            texts = ["a photo of shitzu", "a photo of dog"]
+                            inputs = siglip_processor(text=texts, images=pil_images, padding="max_length", return_tensors="pt")
+                            inputs = {k: v.to(device) for k, v in inputs.items()}
+
+                            with torch.no_grad():
+                                model_outputs = model(**inputs)
+
                         else:
                             with torch.no_grad():
                                 model_outputs = model(inputs.to(device))
@@ -148,7 +166,7 @@ def run(architecture_name):
                         if  isinstance(hidden_out[0], tuple):
                             hidden_out = hidden_out[0][0]  # output of CLIPEncoderLayer is a bit strange
                         else:
-                            hidden_out = hidden_out[0]
+                            hidden_out = hidden_out[0] # 16 729 1152
 
                         if _batch_idx == 0:
                             logger.info(f"Hidden output shape of ({layers_depths[_layer_idx]}) {layers_names[_layer_idx]}: {hidden_out.shape}")
@@ -156,11 +174,15 @@ def run(architecture_name):
                         handle.remove()
 
                     if _batch_idx == 0:
-                        layer_embeddings = hidden_out.view(hidden_out.shape[0], -1).cpu().data  # torch.Size([16, 150528]), 3*224*224 = 150528
+                        # layer_embeddings = hidden_out.view(hidden_out.shape[0], -1).cpu().data  # torch.Size([16, 150528]), 3*224*224 = 150528
+                        # encountered issues where .view(...) requires contiguous memory, 
+                        # but hidden_out is not laid out contiguously in memory -> used .reshaped() instead
+                        layer_embeddings = hidden_out.reshape(hidden_out.shape[0], -1).cpu().data
                     else:
                         # NOTE: here we roughly flatten the feature maps!
                         # torch.Size([16*(k+1), 150528]), up to torch.Size([512, 150528])
-                        layer_embeddings = torch.cat((layer_embeddings, hidden_out.view(hidden_out.shape[0], -1).cpu().data),0)
+                        # layer_embeddings = torch.cat((layer_embeddings, hidden_out.view(hidden_out.shape[0], -1).cpu().data),0)
+                        layer_embeddings = torch.cat((layer_embeddings, hidden_out.reshape(hidden_out.shape[0], -1).cpu().data),0)
 
                     hidden_out = hidden_out.detach().cpu()
                     del hidden_out

@@ -79,6 +79,8 @@ class LayersExractor:
             self.get_ClipViT_layers()
         elif "beit" in self.model_name.lower():
             self.get_BEiT_layers()
+        elif "siglip" in self.model_name.lower():
+            self.get_SigLIP_layers()
         else:
             self.logger[0].error(f"Unknown architecture: {self.model_name}")
             raise ValueError(f"Unknown architecture: {self.model_name}")
@@ -192,7 +194,28 @@ class LayersExractor:
             for block in stage.layers:
                 self._add_layer(block, "ConvNextLayer")
 
-    
+
+    def get_SigLIP_layers(self) -> None:
+        """Extracts the layers, layers names, and depths from a SigLIP model."""
+        
+        # Add the input layer manually
+        self.layers.append("input")
+        self.names.append("input")
+        self.depths.append(self.__modules_count)
+        
+        self._add_layer(self.model.vision_model.embeddings, "SiglipVisionEmbeddings")  # embeddings.patch_embedding?
+        
+        for layer in self.model.vision_model.encoder.layers:
+            if self.debug:
+                print(f"[Layer]: {layer} \n")
+            self._add_layer(layer, ["SiglipEncoderLayer"])
+
+        self._add_layer(self.model.vision_model.head, "SiglipMultiheadAttentionPoolingHead")
+        self._add_layer(self.model.vision_model.head.attention, "MultiheadAttention")
+        self._add_layer(self.model.vision_model.head.mlp, "SiglipMLP")
+        pass
+
+
     @staticmethod
     def _get_layer_depth_location(layer: Any) -> int:
         """Helper function for get_ResNets_layers. Finds the depth location of the layer."""

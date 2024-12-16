@@ -1,0 +1,140 @@
+2024-12-16 18:35:08.499 | INFO     | __main__:<module>:31 - MPS device is assigned
+2024-12-16 18:35:08.502 | INFO     | __main__:run:76 - Experiment started
+2024-12-16 18:35:13.028 | INFO     | __main__:run:78 - Model instantiated: google/siglip-so400m-patch14-384
+2024-12-16 18:35:13.032 | INFO     | __main__:run:80 - Is model in training mode: False
+
+2024-12-16 18:35:13.032 | INFO     | layers_extractor:get_layers:70 - Extracting google/siglip-so400m-patch14-384 layers:
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(1): 	SiglipVisionEmbeddings added
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(2): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(3): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(4): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(5): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(6): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.033 | INFO     | layers_extractor:_add_layer:140 - 	(7): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(8): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(9): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(10): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(11): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(12): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(13): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(14): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(15): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(16): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(17): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.034 | INFO     | layers_extractor:_add_layer:140 - 	(18): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.035 | INFO     | layers_extractor:_add_layer:140 - 	(19): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.035 | INFO     | layers_extractor:_add_layer:140 - 	(20): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.035 | INFO     | layers_extractor:_add_layer:140 - 	(21): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.035 | INFO     | layers_extractor:_add_layer:140 - 	(22): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.035 | INFO     | layers_extractor:_add_layer:140 - 	(23): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.035 | INFO     | layers_extractor:_add_layer:140 - 	(24): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.036 | INFO     | layers_extractor:_add_layer:140 - 	(25): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.036 | INFO     | layers_extractor:_add_layer:140 - 	(26): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.036 | INFO     | layers_extractor:_add_layer:140 - 	(27): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.036 | INFO     | layers_extractor:_add_layer:140 - 	(28): 	SiglipEncoderLayer added
+2024-12-16 18:35:13.036 | INFO     | layers_extractor:_add_layer:140 - 	(29): 	SiglipMultiheadAttentionPoolingHead added
+2024-12-16 18:35:13.036 | INFO     | layers_extractor:_add_layer:140 - 	(30): 	MultiheadAttention added
+2024-12-16 18:35:13.037 | INFO     | layers_extractor:_add_layer:140 - 	(31): 	SiglipMLP added
+2024-12-16 18:35:13.037 | SUCCESS  | layers_extractor:get_layers:88 - Layers/modules extracted!
+
+2024-12-16 18:35:15.161 | INFO     | __main__:run:118 - Calculating intrinsic topology for data category: SHIHTZU
+
+2024-12-16 18:35:19.358 | INFO     | __main__:run:134 - Input shape is: torch.Size([16, 3, 224, 224])
+2024-12-16 18:35:39.155 | INFO     | __main__:run:205 - ID = 24.77 ± 1.09, anisotropy = 0.16 ± 0.0036
+
+2024-12-16 18:37:22.223 | INFO     | __main__:run:172 - Hidden output shape of (1) SiglipVisionEmbeddings: torch.Size([16, 729, 1152])
+2024-12-16 18:41:07.292 | INFO     | __main__:run:205 - ID = 57.26 ± 21.29, anisotropy = 0.04 ± 0.0022
+
+2024-12-16 18:42:13.981 | INFO     | __main__:run:172 - Hidden output shape of (2) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 18:44:58.056 | INFO     | __main__:run:205 - ID = 97.90 ± 32.16, anisotropy = 0.03 ± 0.0008
+
+2024-12-16 18:45:03.470 | INFO     | __main__:run:172 - Hidden output shape of (3) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 18:47:46.575 | INFO     | __main__:run:205 - ID = 47.22 ± 1.70, anisotropy = 0.03 ± 0.0006
+
+2024-12-16 18:47:51.946 | INFO     | __main__:run:172 - Hidden output shape of (4) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 18:50:33.698 | INFO     | __main__:run:205 - ID = 134.03 ± 7.60, anisotropy = 0.04 ± 0.0019
+
+2024-12-16 18:50:38.189 | INFO     | __main__:run:172 - Hidden output shape of (5) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 18:53:20.813 | INFO     | __main__:run:205 - ID = 57.86 ± 22.08, anisotropy = 0.04 ± 0.0010
+
+2024-12-16 18:53:26.557 | INFO     | __main__:run:172 - Hidden output shape of (6) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 18:56:10.616 | INFO     | __main__:run:205 - ID = 82.27 ± 15.51, anisotropy = 0.04 ± 0.0019
+
+2024-12-16 18:56:15.963 | INFO     | __main__:run:172 - Hidden output shape of (7) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 18:58:59.243 | INFO     | __main__:run:205 - ID = 101.06 ± 19.88, anisotropy = 0.04 ± 0.0016
+
+2024-12-16 18:59:04.641 | INFO     | __main__:run:172 - Hidden output shape of (8) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:01:47.564 | INFO     | __main__:run:205 - ID = 58.17 ± 4.60, anisotropy = 0.04 ± 0.0011
+
+2024-12-16 19:01:53.153 | INFO     | __main__:run:172 - Hidden output shape of (9) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:04:35.008 | INFO     | __main__:run:205 - ID = 75.84 ± 29.16, anisotropy = 0.04 ± 0.0032
+
+2024-12-16 19:04:39.661 | INFO     | __main__:run:172 - Hidden output shape of (10) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:07:22.442 | INFO     | __main__:run:205 - ID = 112.93 ± 4.10, anisotropy = 0.03 ± 0.0014
+
+2024-12-16 19:07:27.842 | INFO     | __main__:run:172 - Hidden output shape of (11) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:10:11.329 | INFO     | __main__:run:205 - ID = 92.43 ± 25.34, anisotropy = 0.04 ± 0.0017
+
+2024-12-16 19:10:16.728 | INFO     | __main__:run:172 - Hidden output shape of (12) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:12:59.284 | INFO     | __main__:run:205 - ID = 84.66 ± 6.53, anisotropy = 0.04 ± 0.0030
+
+2024-12-16 19:13:04.673 | INFO     | __main__:run:172 - Hidden output shape of (13) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:15:47.338 | INFO     | __main__:run:205 - ID = 157.78 ± 6.93, anisotropy = 0.03 ± 0.0022
+
+2024-12-16 19:15:52.666 | INFO     | __main__:run:172 - Hidden output shape of (14) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:18:39.566 | INFO     | __main__:run:205 - ID = 154.95 ± 14.06, anisotropy = 0.04 ± 0.0035
+
+2024-12-16 19:18:46.579 | INFO     | __main__:run:172 - Hidden output shape of (15) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:21:33.737 | INFO     | __main__:run:205 - ID = 165.13 ± 5.37, anisotropy = 0.03 ± 0.0016
+
+2024-12-16 19:21:39.116 | INFO     | __main__:run:172 - Hidden output shape of (16) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:24:22.928 | INFO     | __main__:run:205 - ID = 163.11 ± 11.22, anisotropy = 0.03 ± 0.0008
+
+2024-12-16 19:24:28.306 | INFO     | __main__:run:172 - Hidden output shape of (17) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:27:12.657 | INFO     | __main__:run:205 - ID = 171.44 ± 9.26, anisotropy = 0.02 ± 0.0007
+
+2024-12-16 19:27:18.116 | INFO     | __main__:run:172 - Hidden output shape of (18) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:30:02.516 | INFO     | __main__:run:205 - ID = 177.29 ± 7.99, anisotropy = 0.02 ± 0.0014
+
+2024-12-16 19:30:07.854 | INFO     | __main__:run:172 - Hidden output shape of (19) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:32:51.394 | INFO     | __main__:run:205 - ID = 177.71 ± 6.96, anisotropy = 0.02 ± 0.0005
+
+2024-12-16 19:32:56.771 | INFO     | __main__:run:172 - Hidden output shape of (20) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:35:40.916 | INFO     | __main__:run:205 - ID = 196.75 ± 12.54, anisotropy = 0.02 ± 0.0003
+
+2024-12-16 19:35:46.277 | INFO     | __main__:run:172 - Hidden output shape of (21) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:38:30.096 | INFO     | __main__:run:205 - ID = 204.62 ± 9.42, anisotropy = 0.02 ± 0.0003
+
+2024-12-16 19:38:35.525 | INFO     | __main__:run:172 - Hidden output shape of (22) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:41:18.147 | INFO     | __main__:run:205 - ID = 205.87 ± 10.76, anisotropy = 0.02 ± 0.0003
+
+2024-12-16 19:41:23.467 | INFO     | __main__:run:172 - Hidden output shape of (23) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:44:05.417 | INFO     | __main__:run:205 - ID = 220.16 ± 9.80, anisotropy = 0.02 ± 0.0003
+
+2024-12-16 19:44:10.696 | INFO     | __main__:run:172 - Hidden output shape of (24) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:46:53.502 | INFO     | __main__:run:205 - ID = 234.59 ± 16.67, anisotropy = 0.02 ± 0.0004
+
+2024-12-16 19:46:58.838 | INFO     | __main__:run:172 - Hidden output shape of (25) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:49:44.284 | INFO     | __main__:run:205 - ID = 206.38 ± 34.82, anisotropy = 0.02 ± 0.0004
+
+2024-12-16 19:49:49.647 | INFO     | __main__:run:172 - Hidden output shape of (26) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:52:32.821 | INFO     | __main__:run:205 - ID = 209.11 ± 11.24, anisotropy = 0.02 ± 0.0003
+
+2024-12-16 19:52:38.161 | INFO     | __main__:run:172 - Hidden output shape of (27) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:55:19.480 | INFO     | __main__:run:205 - ID = 191.66 ± 17.03, anisotropy = 0.02 ± 0.0002
+
+2024-12-16 19:55:23.829 | INFO     | __main__:run:172 - Hidden output shape of (28) SiglipEncoderLayer: torch.Size([16, 729, 1152])
+2024-12-16 19:58:07.878 | INFO     | __main__:run:205 - ID = 158.63 ± 17.07, anisotropy = 0.02 ± 0.0002
+
+2024-12-16 19:58:13.383 | INFO     | __main__:run:172 - Hidden output shape of (29) SiglipMultiheadAttentionPoolingHead: torch.Size([16, 1152])
+2024-12-16 19:59:01.163 | INFO     | __main__:run:205 - ID = 22.78 ± 1.27, anisotropy = 0.21 ± 0.0051
+
+2024-12-16 19:59:05.087 | INFO     | __main__:run:172 - Hidden output shape of (30) MultiheadAttention: torch.Size([16, 1, 1152])
+2024-12-16 19:59:52.958 | INFO     | __main__:run:205 - ID = 22.63 ± 1.25, anisotropy = 0.22 ± 0.0041
+
+2024-12-16 19:59:56.885 | INFO     | __main__:run:172 - Hidden output shape of (31) SiglipMLP: torch.Size([16, 1, 1152])
+2024-12-16 20:00:44.542 | INFO     | __main__:run:205 - ID = 14.58 ± 0.47, anisotropy = 0.34 ± 0.0064
+
+2024-12-16 20:00:44.552 | SUCCESS  | __main__:run:228 - Results saved at /Users/tonyg/Documents/_Skoltech/_Anisotropy/Src/visual_encoders/data/results/embeddings_topology_experiment/2024-12-16_18-35
+
+
