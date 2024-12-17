@@ -1,0 +1,101 @@
+2024-12-17 01:19:08.825 | INFO     | __main__:main:249 - Experiment started
+2024-12-17 01:19:08.825 | INFO     | __main__:main:251 - Loading cifar100...
+2024-12-17 01:19:16.645 | SUCCESS  | __main__:main:253 - Dataset loaded: DatasetDict({
+    train: Dataset({
+        features: ['img', 'fine_label', 'coarse_label'],
+        num_rows: 50000
+    })
+    test: Dataset({
+        features: ['img', 'fine_label', 'coarse_label'],
+        num_rows: 10000
+    })
+})
+2024-12-17 01:19:17.333 | INFO     | __main__:run:170 - 
+
+Model instantiated: facebook/dinov2-base
+2024-12-17 01:19:17.335 | INFO     | __main__:run:172 - Is model in training mode: False
+2024-12-17 01:19:17.556 | INFO     | __main__:run:174 - Data processor instantiated: BitImageProcessor
+2024-12-17 01:19:17.567 | INFO     | __main__:run:185 - Fetching hidden states for train subset...
+2024-12-17 01:24:50.314 | INFO     | __main__:run:187 - Fetching hidden states for test subset...
+2024-12-17 01:26:07.530 | INFO     | __main__:run:196 - Running classifier for layers...
+2024-12-17 01:26:07.665 | INFO     | __main__:run:200 - hidden_state_0.shape = (3000, 768)
+2024-12-17 01:26:13.515 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.17, 0.13
+2024-12-17 01:26:13.515 | INFO     | __main__:run:237 - Precision (train, test): 	0.15, 0.09
+2024-12-17 01:26:13.515 | INFO     | __main__:run:238 - Recall (train, test): 		0.17, 0.13
+2024-12-17 01:26:13.515 | INFO     | __main__:run:239 - F1 score (train, test): 	0.13, 0.09
+
+2024-12-17 01:26:13.597 | INFO     | __main__:run:200 - hidden_state_1.shape = (3000, 768)
+2024-12-17 01:26:17.049 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.24, 0.19
+2024-12-17 01:26:17.049 | INFO     | __main__:run:237 - Precision (train, test): 	0.22, 0.21
+2024-12-17 01:26:17.049 | INFO     | __main__:run:238 - Recall (train, test): 		0.24, 0.19
+2024-12-17 01:26:17.050 | INFO     | __main__:run:239 - F1 score (train, test): 	0.19, 0.14
+
+2024-12-17 01:26:17.129 | INFO     | __main__:run:200 - hidden_state_2.shape = (3000, 768)
+2024-12-17 01:26:19.894 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.28, 0.23
+2024-12-17 01:26:19.895 | INFO     | __main__:run:237 - Precision (train, test): 	0.29, 0.24
+2024-12-17 01:26:19.895 | INFO     | __main__:run:238 - Recall (train, test): 		0.28, 0.23
+2024-12-17 01:26:19.895 | INFO     | __main__:run:239 - F1 score (train, test): 	0.23, 0.18
+
+2024-12-17 01:26:19.970 | INFO     | __main__:run:200 - hidden_state_3.shape = (3000, 768)
+2024-12-17 01:26:23.033 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.32, 0.27
+2024-12-17 01:26:23.033 | INFO     | __main__:run:237 - Precision (train, test): 	0.32, 0.28
+2024-12-17 01:26:23.033 | INFO     | __main__:run:238 - Recall (train, test): 		0.32, 0.27
+2024-12-17 01:26:23.034 | INFO     | __main__:run:239 - F1 score (train, test): 	0.27, 0.22
+
+2024-12-17 01:26:23.085 | INFO     | __main__:run:200 - hidden_state_4.shape = (3000, 768)
+2024-12-17 01:26:26.079 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.40, 0.34
+2024-12-17 01:26:26.079 | INFO     | __main__:run:237 - Precision (train, test): 	0.40, 0.33
+2024-12-17 01:26:26.079 | INFO     | __main__:run:238 - Recall (train, test): 		0.40, 0.34
+2024-12-17 01:26:26.080 | INFO     | __main__:run:239 - F1 score (train, test): 	0.37, 0.30
+
+2024-12-17 01:26:26.105 | INFO     | __main__:run:200 - hidden_state_5.shape = (3000, 768)
+2024-12-17 01:26:28.920 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.51, 0.43
+2024-12-17 01:26:28.920 | INFO     | __main__:run:237 - Precision (train, test): 	0.51, 0.43
+2024-12-17 01:26:28.920 | INFO     | __main__:run:238 - Recall (train, test): 		0.51, 0.43
+2024-12-17 01:26:28.920 | INFO     | __main__:run:239 - F1 score (train, test): 	0.49, 0.40
+
+2024-12-17 01:26:28.937 | INFO     | __main__:run:200 - hidden_state_6.shape = (3000, 768)
+2024-12-17 01:26:33.450 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.68, 0.60
+2024-12-17 01:26:33.452 | INFO     | __main__:run:237 - Precision (train, test): 	0.68, 0.61
+2024-12-17 01:26:33.452 | INFO     | __main__:run:238 - Recall (train, test): 		0.68, 0.60
+2024-12-17 01:26:33.453 | INFO     | __main__:run:239 - F1 score (train, test): 	0.68, 0.59
+
+2024-12-17 01:26:33.473 | INFO     | __main__:run:200 - hidden_state_7.shape = (3000, 768)
+2024-12-17 01:26:39.815 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.79, 0.67
+2024-12-17 01:26:39.815 | INFO     | __main__:run:237 - Precision (train, test): 	0.79, 0.68
+2024-12-17 01:26:39.815 | INFO     | __main__:run:238 - Recall (train, test): 		0.79, 0.67
+2024-12-17 01:26:39.815 | INFO     | __main__:run:239 - F1 score (train, test): 	0.79, 0.67
+
+2024-12-17 01:26:39.828 | INFO     | __main__:run:200 - hidden_state_8.shape = (3000, 768)
+2024-12-17 01:26:44.913 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.89, 0.74
+2024-12-17 01:26:44.913 | INFO     | __main__:run:237 - Precision (train, test): 	0.89, 0.75
+2024-12-17 01:26:44.913 | INFO     | __main__:run:238 - Recall (train, test): 		0.89, 0.74
+2024-12-17 01:26:44.913 | INFO     | __main__:run:239 - F1 score (train, test): 	0.89, 0.74
+
+2024-12-17 01:26:44.926 | INFO     | __main__:run:200 - hidden_state_9.shape = (3000, 768)
+2024-12-17 01:27:04.085 | INFO     | __main__:run:236 - Accuracy (train, test): 	0.98, 0.81
+2024-12-17 01:27:04.085 | INFO     | __main__:run:237 - Precision (train, test): 	0.98, 0.82
+2024-12-17 01:27:04.085 | INFO     | __main__:run:238 - Recall (train, test): 		0.98, 0.81
+2024-12-17 01:27:04.085 | INFO     | __main__:run:239 - F1 score (train, test): 	0.98, 0.81
+
+2024-12-17 01:27:04.098 | INFO     | __main__:run:200 - hidden_state_10.shape = (3000, 768)
+2024-12-17 01:27:27.021 | INFO     | __main__:run:236 - Accuracy (train, test): 	1.00, 0.82
+2024-12-17 01:27:27.021 | INFO     | __main__:run:237 - Precision (train, test): 	1.00, 0.83
+2024-12-17 01:27:27.021 | INFO     | __main__:run:238 - Recall (train, test): 		1.00, 0.82
+2024-12-17 01:27:27.021 | INFO     | __main__:run:239 - F1 score (train, test): 	1.00, 0.83
+
+2024-12-17 01:27:27.033 | INFO     | __main__:run:200 - hidden_state_11.shape = (3000, 768)
+2024-12-17 01:27:43.919 | INFO     | __main__:run:236 - Accuracy (train, test): 	1.00, 0.87
+2024-12-17 01:27:43.920 | INFO     | __main__:run:237 - Precision (train, test): 	1.00, 0.88
+2024-12-17 01:27:43.920 | INFO     | __main__:run:238 - Recall (train, test): 		1.00, 0.87
+2024-12-17 01:27:43.920 | INFO     | __main__:run:239 - F1 score (train, test): 	1.00, 0.88
+
+2024-12-17 01:27:43.940 | INFO     | __main__:run:200 - hidden_state_12.shape = (3000, 768)
+2024-12-17 01:27:51.316 | INFO     | __main__:run:236 - Accuracy (train, test): 	1.00, 0.91
+2024-12-17 01:27:51.316 | INFO     | __main__:run:237 - Precision (train, test): 	1.00, 0.91
+2024-12-17 01:27:51.317 | INFO     | __main__:run:238 - Recall (train, test): 		1.00, 0.91
+2024-12-17 01:27:51.317 | INFO     | __main__:run:239 - F1 score (train, test): 	1.00, 0.91
+
+2024-12-17 01:27:51.317 | SUCCESS  | __main__:run:244 - Classification scores calculated
+2024-12-17 01:27:51.383 | SUCCESS  | __main__:main:261 - Results saved at /Users/tonyg/Documents/_Skoltech/_Anisotropy/Src/visual_encoders/data/results/probing_experiment/2024-12-17_01-19
+2024-12-17 01:27:51.981 | SUCCESS  | __main__:main:307 - Plot saved at /Users/tonyg/Documents/_Skoltech/_Anisotropy/Src/visual_encoders/data/results/probing_experiment/2024-12-17_01-19

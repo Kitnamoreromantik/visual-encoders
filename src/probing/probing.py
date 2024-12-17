@@ -8,6 +8,7 @@ import numpy as np
 import torch
 from PIL import Image
 from datasets import load_dataset
+from datetime import datetime
 from loguru import logger
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import precision_score, recall_score, f1_score
@@ -23,19 +24,26 @@ from transformers import (
     ImageGPTImageProcessor,
     ImageGPTModel
 )
+from transformers import AutoProcessor, SiglipVisionModel
+from transformers import AutoImageProcessor, AutoModel
 
 ARCHITECTURES = [
     "openai/imagegpt-small",
     "openai/clip-vit-base-patch16",
-    "facebook/convnext-tiny-224",
+    # "facebook/convnext-tiny-224",
     "facebook/convnext-base-224",
     "microsoft/beit-base-patch16-224",
+    "google/siglip-so400m-patch14-384",
+    "facebook/dinov2-base",
     ]
 
 cwd = Path.cwd()
 root = cwd.parents[cwd.parts.index("scripts")] if "scripts" in cwd.parts else cwd
-RESULTS_ROOT = join(root, "data/results")
-RESULTS_FOLDER = join(RESULTS_ROOT, "probing_experiment2")
+
+now = datetime.now()
+RESULTS_ROOT = join(root, "data", "results")
+RESULTS_FOLDER = join(RESULTS_ROOT, "probing_experiment", 
+                      now.strftime("%Y-%m-%d_%H-%M"))
 
 TRAIN_SUBSET_SIZE = 3000
 TEST_SUBSET_SIZE = 700
@@ -53,6 +61,10 @@ architecture_model_map = {
         lambda: CLIPModel.from_pretrained("openai/clip-vit-base-patch16"),
     "microsoft/beit-base-patch16-224": 
         lambda: BeitForImageClassification.from_pretrained("microsoft/beit-base-patch16-224"),
+    "google/siglip-so400m-patch14-384":
+        lambda: SiglipVisionModel.from_pretrained("google/siglip-so400m-patch14-384"),
+    "facebook/dinov2-base":
+        lambda: AutoModel.from_pretrained("facebook/dinov2-base"),
 }
 
 architecture_preprocessor_map = {
@@ -66,6 +78,10 @@ architecture_preprocessor_map = {
         lambda: CLIPProcessor.from_pretrained("openai/clip-vit-base-patch16"),
     "microsoft/beit-base-patch16-224": 
         lambda: BeitImageProcessor.from_pretrained("microsoft/beit-base-patch16-224"),
+    "google/siglip-so400m-patch14-384":
+        lambda: AutoProcessor.from_pretrained("google/siglip-so400m-patch14-384", output_hidden_states=True),
+    "facebook/dinov2-base":
+        lambda: AutoImageProcessor.from_pretrained('facebook/dinov2-base')
 }
 
 
@@ -94,6 +110,20 @@ def batch_processor(sample, device, model, preprocessor, architecture):
         input_ids = encoding["input_ids"].to(device)
         with torch.no_grad():
             outputs = model(input_ids, output_hidden_states=True)
+            
+    elif "siglip" in architecture:
+        images = [Image.fromarray(np.array(img, dtype=np.uint8)) for img in sample["img"]]
+        inputs = preprocessor(images=images, return_tensors="pt")
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        outputs = model(**inputs, output_hidden_states=True)
+        
+    elif "dinov2" in architecture:
+        images = [Image.fromarray(np.array(img, dtype=np.uint8)) for img in sample["img"]]
+        inputs = preprocessor(images=images, return_tensors="pt")
+        device = "cpu"  # avoidinhg not implemented for MPS problem
+        model.to(device)
+        inputs = {k: v.to(device) for k, v in inputs.items()}
+        outputs = model(**inputs, output_hidden_states=True)
 
     else:
         # Get list of images from CIFAR-100 and convert to PIL images
@@ -243,7 +273,10 @@ def main():
         'ytick.labelsize': 14,    # Y tick labels font size
         'legend.fontsize': 12     # Legend font size
     })
-    metrics = ["Recall", "Precision", "Accuracy"]
+    
+    # metrics = ["Recall", "Precision", "Accuracy"]
+    metrics = ["Accuracy", "Precision"]
+
     # metrics = [k for k in scores[architecture]["hidden_state_0"].keys()]
     fig, axs = plt.subplots(1, len(metrics), figsize=(14, 6))
 
